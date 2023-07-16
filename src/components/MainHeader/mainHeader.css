@@ -1,0 +1,11 @@
+.header {
+    background: url("../../images/header.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 23em;
+}
+
+.bg-rgba {
+    background-color: rgba(0, 0, 0, 0.3);
+}
