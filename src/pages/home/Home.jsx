@@ -2,7 +2,9 @@ import MainHeader from "../../components/MainHeader/MainHeader"
 import { cajitas, noticias } from "../../data.js"
 import "./home.css"
 
-export const Home = () => {
+import React from 'react'
+
+function Home() {
   return (
     <div>
         <MainHeader/>
@@ -21,7 +23,7 @@ export const Home = () => {
             <h4 className="text-center">Novedades & Tips</h4>
             <p>Revisa Las Últimas Noticias Y Artículos De Nuestro Blog.</p>
             <div className="row row-cols-1 row-cols-md-3 g-4 justify-content-center text-center mx-3">
-               {
+            {
                 noticias.map(({img, title}, index) => {
                     return (
                         <div key={index}>
@@ -30,10 +32,10 @@ export const Home = () => {
                         </div>
                     )   
                 })
-               } 
+            } 
             </div>
-      </div>
-      <div className="bg-secondary py-4 text-center">
+    </div>
+    <div className="bg-secondary py-4 text-center">
             <h3>¡No te pierdas ninguna de nuestras novedades!</h3>
             <p>Suscríbete ahora y recibe todas las actualizaciones directamente en tu bandeja de entrada.</p>
             <form action="" className="row d-flex flex-column justify-content-center align-items-center gap-1">
@@ -50,3 +52,5 @@ export const Home = () => {
     </div>
   )
 }
+
+export default Home
