@@ -2,9 +2,9 @@ import React from 'react'
 
 function ListadoPropiedades() {
   return (
-    <div className='d-flex p-2' style={{fontSize:".9rem",lineHeight:"20px"}}>
-        <div className='d-flex justify-content-between gap-2 border rounded'>
-          <img width="280" height="220" className="rounded" src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" alt="" />
+    <div className='d-flex px-4 pt-3' style={{fontSize:".9rem",lineHeight:"20px"}}>
+        <div className='d-flex justify-content-between gap-2 border rounded' style={{maxHeight:"210px"}}>
+          <img width="280" className="rounded" src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" alt="" />
           <div className='py-3'>
             <div className='d-flex gap-5'>
               <p className='fw-medium'>USD 500.000</p>

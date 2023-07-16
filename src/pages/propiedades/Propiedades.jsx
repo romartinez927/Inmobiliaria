@@ -4,11 +4,11 @@ import Filtros from '../../components/Propiedades/Filtros'
 
 function Propiedades() {
   return (
-    <>
+    <div className='pb-3'>
       <Filtros/>
       <ListadoPropiedades/>
       <ListadoPropiedades/>
-    </>
+    </div>
   )
 }
 

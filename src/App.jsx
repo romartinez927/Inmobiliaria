@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Home from './pages/home/home'
 import Blog from './pages/blog/blog'
 import Ediciones from './pages/ediciones/ediciones'
 import Contacto from './pages/contacto/contacto'
@@ -10,6 +9,7 @@ import Propiedades from './pages/propiedades/propiedades'
 import NavBar from './components/NavBar/NavBar'
 import { BrowserRouter, Router, Route, Routes } from 'react-router-dom'
 import Servicios from './pages/servicios/Servicios'
+import Home from './pages/home/home'
 
 function App() {
 
