@@ -10,7 +10,7 @@ function Filtros() {
   return (
     <div className='d-flex px-3 pt-3 pb-2 gap-2'>
        <div>
-        <select id="localidad" className="custom-select" value={localidadSeleccionada} onChange={e => setLocalidadSeleccionada(e.target.value)}>
+        <select id="localidad" className="custom-select pe-5" value={localidadSeleccionada} onChange={e => setLocalidadSeleccionada(e.target.value)}>
           <option value="Ingresa ciudades o barrios" disabled hidden>Ingresa ciudades o barrios</option>
           {
             ciudades.map(ciudad => (
@@ -23,7 +23,7 @@ function Filtros() {
       </div>
 
       <div>
-        <select id="tipo" className="custom-select" value={tipoSeleccionado} onChange={e => setTipoSeleccionado(e.target.value)}>
+        <select id="tipo" className="custom-select pe-4" value={tipoSeleccionado} onChange={e => setTipoSeleccionado(e.target.value)}>
             <option value="Propiedad" disabled hidden>Propiedad</option>
           {
             tiposPropiedad.map(tipo => (

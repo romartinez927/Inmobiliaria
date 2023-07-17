@@ -1,39 +1,38 @@
 import React from 'react'
 import { useState } from 'react';
-import { ciudades, noticias } from '../../data.js';
+import { servicios } from '../../data.js';
+import "./servicios.css"
+import Pagination from '../../components/Pagination/Pagination.jsx';
 
 function Servicios() {
     const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingresa ciudades o barrios');
   return (
-    <div>
-        <div className='pt-3 col-3 mx-5'>
-            <select id="localidad" className="custom-select" value={localidadSeleccionada} onChange={e => setLocalidadSeleccionada(e.target.value)}>
-            <option value="Ingresa ciudades o barrios" disabled hidden>Ingresa ciudades o barrios</option>
-            {
-                ciudades.map(ciudad => (
-                    <option key={ciudad} value={ciudad}>
-                        {ciudad}
-                    </option>
-                ))
-            }
-            </select>
+    <div className='px-5 pt-4'>
+        <div className='search-box col-5 px-4'>
+            <form className="d-flex search-form" role="search">
+                <input className="form-control me-2 search-text" type="search" placeholder="Search" aria-label="Search" />
+                <button className="search-button" type="submit">Buscar</button>
+            </form>
         </div>
-        <div className='d-flex gap-4 justify-content-center mx-3 pt-4'>
+        <div className='d-flex row gap-4 justify-content-center py-3'>
             {
-                noticias.map(({img, title}, index) => {
+                servicios.map(({img, title, tag, ciudad}, index) => {
                     return (
-                        <div key={index} className="card" style={{width:"18rem"}}>
-                            <img src={img} alt={title} className="card-img-top" height="190"/>
-                            <div className="card-body lh-sm p-0">
-                                <p className="card-title fw-semibold px-2 pt-2">{title}</p>
-                                <p className="card-text px-2">Inmobiliarias.</p>
-                                <p className='border-top p-2 my-auto'>Villa Ballester</p>
+                        <div className="card" style={{width:"18rem"}}>
+                            <img src={img} className="card-img-top" alt="..." height="150" style={{objectFit:"cover"}}/>
+                            <div className="card-body">
+                                <h5 className="card-title fw-semibold">{title}</h5>
+                                <p className="card-text">Some quick example text to build on the card title.</p>
                             </div>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">{ciudad}</li>
+                            </ul>
                         </div>
                     )   
                 })
             } 
         </div>
+        <Pagination/>
     </div>
   )
 }

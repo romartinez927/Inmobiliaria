@@ -10,6 +10,7 @@ import NavBar from './components/NavBar/NavBar'
 import { BrowserRouter, Router, Route, Routes } from 'react-router-dom'
 import Servicios from './pages/servicios/Servicios'
 import Home from './pages/home/home'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="servicios" element={<Servicios/>}/>
             <Route path="*" element={<NotFound/>}/>
           </Routes>
+          <Footer/>
         </div>
     </BrowserRouter>
   )

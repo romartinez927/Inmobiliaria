@@ -2,15 +2,22 @@
     display: block;
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
-    color: black
+    color: #000;
+    font-weight: 500;
+    outline: none;
+    appearance:none;
+    background-image: url("../../images/flecha.png");
+    background-repeat: no-repeat; 
+    background-position-x: 95%;
+    background-position-y: center;
+    background-size: 10px;
+    cursor: pointer;
   }
-  
-  /* Estilos para las opciones del select */
-  .custom-select option {
+
+  .custom-select:hover {
     background-color: #fff;
-    color: #333;
   }
