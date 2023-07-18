@@ -38,6 +38,10 @@ export const noticias = [
         img: "https://st.depositphotos.com/1035837/3968/i/600/depositphotos_39685183-stock-photo-blue-sky-with-clouds-and.jpg",
         title: "Un Sueño Hecho Realidad",
     },
+    {
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&usqp=CAU",
+        title: "La regla que mejor combina los colores",
+    },
 ]
 
 export const cajitas = [

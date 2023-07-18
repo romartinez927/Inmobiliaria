@@ -19,28 +19,35 @@ function Home() {
                 })
             }
         </div>
-        <div className="bg-light py-3 text-center px-5">
-            <h3>¡Encontrá las mejores propiedades en venta y alquiler!</h3>
-            <p className="px-3">Magazine Inmobiliario es el portal inmobiliario líder en búsqueda de propiedades e inmuebles en Argentina.
-Si lo que querés es alquilar o comprar un departamento, casa, local, oficina o terreno, este es el sitio para vos.</p>
-            <div className="d-flex">
-                <div style={{width:"230px"}}>
-                    <p className="fw-semibold">Variedad de anunciantes</p>
-                    <p>Inmobiliarias y dueños directos de todo el país ofrecen las mejores opciones de propiedades para vos.</p>
+        <div className="bg-light py-4 text-center w-100">
+            <h3>¡No te pierdas ninguna de nuestras novedades!</h3>
+            <p>Suscríbete ahora y recibe todas las actualizaciones directamente en tu bandeja de entrada.</p>
+            <form action="" className="d-flex flex-column justify-content-center align-items-center gap-1">
+                <div className="form-group col-4">
+                    <input type="text" className="form-control" placeholder="Nombre y Apellido" />
                 </div>
-                <div style={{width:"230px"}}>
-                    <p className="fw-semibold">Es simple, es rápido</p>
-                    <p>Utilizá nuestros filtros y buscá las propiedades que más se ajusten a tus necesidades y preferencias.</p>
+                <div className="form-group col-4">
+                    <input type="email" className="form-control" placeholder="E-mail" />
                 </div>
-                <div style={{width:"230px"}}>
-                    <p className="fw-semibold">Buscá con tranquilidad</p>
-                    <p>Comprá o alquilá de manera segura y confiable. </p>
-                </div>
-                <div style={{width:"230px"}}>
-                    <p className="fw-semibold">Somos Magazine Inmobiliario</p>
-                    <p>15 años en el mercado y miles de avisos publicados nos respaldan en la búsqueda de tu hogar.</p>
-                </div>
+                <button type="submit" className="btn btn-primary col-1">Enviar</button>
+
+            </form>
+        </div>
+        <div className="d-flex px-5 py-3">
+            <p>Este año cumplimos 15 años, durante este tiempo pasó de todo, cambió el mundo, los avances de la tecnología nos han permitido lograr cosas que hubieran sido impensadas hace muy poco tiempo.
+Junto con ella, se modificaron lo hábitos y las costumbres de la gente, desde reencontrarte con amigos a través de Facebook hasta avisar que estás en la puerta enviando un mensaje de whatsapp.</p>
+            <img src="" alt="" />
+        </div>
+        <div className="d-flex px-5 py-3">
+            <img src="" alt="" />
+            <p>Hoy nuestro mundo es tan real como virtual y atentos a estos cambios y deseosos de seguir ayudando a nuestros clientes hemos comenzado una transformación que nos permitirá seguir un paso adelante brindando herramientas de comunicación cada vez más efectivas, enfocándonos en más y mejor contenido para estar cerca y ser útiles.</p>
+        </div>
+        <div className="d-flex px-5 py-3">
+            <div>
+                <p>Nuestro formato Papel seguirá existiendo para continuar en contacto con el público específico que hace uso de él pero además comenzamos a explotar las posibilidades, alcance y llegada de nuestra web, las redes sociales y el canal de Youtube, que nos permiten multiplicar exponencialmente nuestros resultados transformándonos en un grupo de medios, para adaptarnos a cada usuario y sus necesidades.</p>
+                <p>Estamos evolucionando, para vos.</p>
             </div>
+            <img src="" alt="" />
         </div>
         <div className="py-4 text-center">
             <h4 className="text-center">Novedades y Tips</h4>
@@ -58,20 +65,7 @@ Si lo que querés es alquilar o comprar un departamento, casa, local, oficina o 
             } 
             </div>
         </div>
-        <div className="bg-light py-4 text-center">
-            <h3>¡No te pierdas ninguna de nuestras novedades!</h3>
-            <p>Suscríbete ahora y recibe todas las actualizaciones directamente en tu bandeja de entrada.</p>
-            <form action="" className="d-flex flex-column justify-content-center align-items-center gap-1">
-                <div className="form-group col-4">
-                    <input type="text" className="form-control" placeholder="Nombre y Apellido" />
-                </div>
-                <div className="form-group col-4">
-                    <input type="email" className="form-control" placeholder="E-mail" />
-                </div>
-                <button type="submit" className="btn btn-primary col-1">Enviar</button>
-
-            </form>
-        </div>
+        
     </div>
   )
 }

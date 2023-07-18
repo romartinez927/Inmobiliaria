@@ -20,9 +20,9 @@ function ContactForm() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
     return (
-        <form onSubmit={handleSubmit} className='col-5'>
+        <form onSubmit={handleSubmit} className='col-5 lh-sm'>
             <div>
-                <label htmlFor="name" className='form-label'>Nombre:</label>
+                <label htmlFor="name" className='form-label ps-1'>Nombre:</label>
                 <input
                     type="text"
                     id="name"
@@ -34,8 +34,8 @@ function ContactForm() {
                 />
             </div>
 
-            <div>
-                <label htmlFor="email" className='form-label'>Correo electrónico:</label>
+            <div className='pt-2'>
+                <label htmlFor="email" className='form-label ps-1'>Correo electrónico:</label>
                 <input
                     type="email"
                     id="email"
@@ -46,8 +46,8 @@ function ContactForm() {
                     required
                 />
             </div>
-            <div>
-                <label htmlFor="subject" className='form-label'>Asunto:</label>
+            <div className='pt-2'>
+                <label htmlFor="subject" className='form-label ps-1'>Asunto:</label>
                 <input
                     type="text"
                     id="subject"
@@ -59,14 +59,15 @@ function ContactForm() {
                 />
             </div>
 
-            <div>
-                <label htmlFor="message" className='form-label'>Mensaje:</label>
+            <div className='pt-2'>
+                <label htmlFor="message" className='form-label ps-1'>Mensaje:</label>
                 <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
                     className='form-control'
+                    style={{minHeight:"100px"}}
                     required
                 />
             </div>

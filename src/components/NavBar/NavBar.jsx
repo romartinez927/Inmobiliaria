@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa"
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg py-0">
+    <nav className="w-100 navbar navbar-expand-lg py-0">
         <div className="nav-container d-flex px-2">
             <Link className="navbar-brand" to="/">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0n4ODoAIA--3sUNXFOtz78IfoaPwViociyQ&usqp=CAU" alt="logo" width="70"/>
