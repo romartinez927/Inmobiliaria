@@ -1,8 +1,11 @@
 import React from 'react'
+import Propiedad from '../../components/Propiedades/Propiedad'
 
 function Ediciones() {
   return (
-    <div>ediciones</div>
+    <div>
+      <Propiedad/>
+    </div>
   )
 }
 

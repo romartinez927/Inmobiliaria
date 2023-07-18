@@ -7,9 +7,9 @@ import { FaBars } from "react-icons/fa"
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg py-0">
-        <div className="nav-container d-flex">
+        <div className="nav-container d-flex px-2">
             <Link className="navbar-brand" to="/">
-                <img src="https://assets.stickpng.com/images/584290baa6515b1e0ad75ac2.png" alt="logo" width="100"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0n4ODoAIA--3sUNXFOtz78IfoaPwViociyQ&usqp=CAU" alt="logo" width="70"/>
             </Link>
             <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
