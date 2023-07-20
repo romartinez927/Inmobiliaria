@@ -16,19 +16,17 @@ function App() {
 
   return (
     <BrowserRouter>
-        <div>
-          <NavBar/>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="contacto" element={<Contacto/>}/>
-            <Route path="blog" element={<Blog/>}/>
-            <Route path="ediciones" element={<Ediciones/>}/>
-            <Route path="propiedades" element={<Propiedades/>}/>
-            <Route path="servicios" element={<Servicios/>}/>
-            <Route path="*" element={<NotFound/>}/>
-          </Routes>
-          <Footer/>
-        </div>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="contacto" element={<Contacto/>}/>
+          <Route path="blog" element={<Blog/>}/>
+          <Route path="ediciones" element={<Ediciones/>}/>
+          <Route path="propiedades" element={<Propiedades/>}/>
+          <Route path="servicios" element={<Servicios/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
+        <Footer/>
     </BrowserRouter>
   )
 }

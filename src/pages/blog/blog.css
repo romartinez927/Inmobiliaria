@@ -1,41 +1,40 @@
-.search-box {
+.search-blog-box {
     position: relative;
 
     }
-.search-form {
-    height: 45px;
-    border: 1px solid #4a4e69;
+.search-blog-form {
+    height: 40px;
+    border: 1px solid #cbf3ee;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
     background-color: #fff;
     overflow: hidden;
     }
-.search-text {
+.search-blog-text {
     font-size: 16px;
     color: #ddd;
     border-width: 0;
     background: transparent;
     }
     
-.search-box input[type="text"] {
+.search-blog-box input[type="text"] {
     width: 90%;
     padding: 8px 0 12px 1em;
     color: #333;
     outline: none;
     }
-.search-button {
+.search-blog-button {
     position: absolute;
-    top: 0;
     right: 0;
-    height: 45px;
-    width: 90px;
+    height: 40px;
+    width: 80px;
     font-size: 14px;
-    color: #fff;
+    color: #656;
     text-align: center;
     line-height: 4px;
     border-width: 0;
-    background-color: #22223b;
+    background-color: #cbf3ee;
     -webkit-border-radius: 0px 15px 15px;
     -moz-border-radius: 0px 15px 15px 15px;
     border-radius: 15px 15px 15px 15px;

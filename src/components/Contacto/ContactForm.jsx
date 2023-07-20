@@ -20,7 +20,7 @@ function ContactForm() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
     return (
-        <form onSubmit={handleSubmit} className='col-5 lh-sm'>
+        <form onSubmit={handleSubmit} className='col-md-5 col-sm-12 lh-sm'>
             <div>
                 <label htmlFor="name" className='form-label ps-1'>Nombre:</label>
                 <input

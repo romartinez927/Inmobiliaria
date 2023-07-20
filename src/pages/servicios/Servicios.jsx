@@ -8,7 +8,7 @@ function Servicios() {
     const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingresa ciudades o barrios');
   return (
     <div className='px-5 pt-4'>
-        <div className='search-box col-5 px-4'>
+        <div className='search-box col-md-5 col-sm-12 mx-auto px-4'>
             <form className="d-flex search-form" role="search">
                 <input className="form-control me-2 search-text" type="search" placeholder="Search" aria-label="Search" />
                 <button className="search-button" type="submit">Buscar</button>

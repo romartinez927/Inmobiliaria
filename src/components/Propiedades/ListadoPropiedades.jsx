@@ -1,31 +1,83 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 
 function ListadoPropiedades() {
-  return (
-    <div className='d-flex px-4 pt-3' style={{fontSize:".9rem",lineHeight:"20px"}}>
-        <div className='d-flex justify-content-between gap-2 border rounded' style={{maxHeight:"210px"}}>
-          <img width="280" className="rounded" src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" alt="" />
-          <div className='p-2'>
-            <div className='d-flex gap-5'>
-              <p className='fw-medium'>USD 500.000</p>
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  // Función para determinar qué componente renderizar
+  const renderComponent = () => {
+    if (windowWidth >= 800) {
+      return (
+      <div className='d-flex px-4 pt-3' style={{fontSize:".9rem",lineHeight:"20px"}}>
+        <div className='d-flex justify-content-between gap-2 border rounded' style={{height:"280px"}}>
+          <div className='image-container'>
+            <img src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" className='responsive-image' alt="" />
+          </div>
+          <div className='d-flex flex-column p-1 justify-content-between'>
+            <div className='d-flex gap-5 pt-1'>
+              <p className='fw-medium fs-5 pt-1'>$ 163.700</p>
               <div className='d-flex flex-column border-start px-2' style={{lineHeight:"10px"}}>
-                <p className='pt-2'>Av. Libertador al 5000</p>
-                <p className='fw-medium'>Belgrano, Capital Federal</p>
+                <p className='pt-2 mb-3 fw-medium'>Av. Libertador al 5000</p>
+                <p>Belgrano, Capital Federal</p>
               </div> 
             </div>
-            <div className='d-flex gap-3 pt-2' style={{fontSize:".7rem",lineHeight:"1px"}}>
+            <div className='d-flex gap-3 pt-4' style={{fontSize:".7rem",lineHeight:"1px"}}>
               <p>192 m2</p>
               <p>1 baño</p>
             </div>
-            <p className='fw-medium m-0' style={{fontSize:"1rem"}}>Venta Local 192 m2 en Dome Business Plaza Belgrano Cochera Opcional</p>
-            <p style={{fontSize:".8rem"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum, possimus quaerat deleniti quos eligendi soluta perferendis sunt libero neque incidunt. Perferendis, adipisci excepturi repellat voluptates iusto similique.</p>
-            <div className='d-flex justify-content-end px-2 m-0 py-2'>
-              <button className='btn btn-success fw-medium' style={{fontSize:".8rem"}}>Contactar</button>
-            </div>        
+            <p className='fw-medium mt-1 mb-2' style={{fontSize:"1.2rem"}}>Venta Local 192 m2 en Dome Business Plaza Belgrano Cochera Opcional</p>
+            <p style={{fontSize:"1rem"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum, possimus quaerat deleniti quos eligendi soluta perferendis sunt libero neque incidunt. </p>
+            <div className='d-flex justify-content-end btn-container'>
+              <button className='btn btn-success fw-medium px-3 py-2'>Contactar</button>
+            </div>
           </div>
         </div>
+      </div>
+      );
+    } else {
+      return (
+        <div className="card mx-4 my-2" style={{width: "auto"}}>
+          <img src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" className="card-img-top" alt="..."/>
+          <div className="card-body">
+          <div className='d-flex gap-5 pt-1'>
+                <div className='d-flex flex-column' style={{lineHeight:"10px"}}>
+                  <p className='fw-medium fs-5 pt-1' style={{fontSize:"1rem"}}>$ 163.700</p>
+                  <p className='pt-2 mb-3 fw-medium' style={{fontSize:"1rem"}}>Av. Libertador al 5000</p>
+                  <p style={{fontSize:"1rem"}}>Belgrano, Capital Federal</p>
+                </div> 
+              </div>
+              <div className='d-flex gap-3 pt-3' style={{fontSize:".7rem",lineHeight:"1px"}}>
+                <p>192 m2</p>
+                <p>1 baño</p>
+              </div>
+              <p className='fw-medium mt-1 mb-2' style={{fontSize:"1rem"}}>Venta Local 192 m2 en Dome Business Plaza Belgrano Cochera Opcional</p>
+              <p style={{fontSize:".9rem"}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum, possimus quaerat deleniti quos eligendi soluta perferendis sunt libero neque incidunt. </p>
+              <div className='d-flex justify-content-end btn-container'>
+                <button className='btn btn-success fw-medium px-3 py-2'>Contactar</button>
+              </div>
+          </div>
+        </div>
+      )
+    }
+
+  };
+  return (
+    <div>
+      {renderComponent()}
     </div>
-  )
+  );
 }
 
 export default ListadoPropiedades

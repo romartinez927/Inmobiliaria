@@ -1,9 +1,10 @@
+import NavBar from "../NavBar/NavBar"
 import "./mainHeader.css"
 
 function MainHeader() {
   return (
     <div className="row header d-flex mx-auto">
-      <div className="d-flex flex-column justify-content-center align-items-center text-light bg-rgba">
+      <div className="d-flex bg-rgba flex-column justify-content-center align-items-center text-light" >
         <h1 className="pb-2">Todo lo que necesitas para tu hogar</h1>
         <div className="bg-light rounded p-2">
           <form action="" className="d-flex gap-3 p-2">
