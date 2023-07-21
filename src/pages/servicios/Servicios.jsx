@@ -18,7 +18,7 @@ function Servicios() {
             {
                 servicios.map(({img, title, tag, ciudad}, index) => {
                     return (
-                        <div className="card" style={{width:"18rem"}}>
+                        <div className="card" key={index} style={{width:"18rem"}}>
                             <img src={img} className="card-img-top" alt="..." height="150" style={{objectFit:"cover"}}/>
                             <div className="card-body">
                                 <h5 className="card-title fw-semibold">{title}</h5>

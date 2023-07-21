@@ -13,16 +13,10 @@ function Contacto() {
           <p>Si tienes alguna pregunta, comentario o sugerencia, por favor no dudes en ponerte en contacto con nosotros a través del formulario que se encuentra a continuación. </p>
           <p>Estaremos encantados de ayudarte en lo que necesites.</p>
           <div className='d-flex gap-2'>
-            <span class="material-symbols-outlined">
-              call
-            </span>
-            <p>15-6577-6756</p>
+            <p><i className="fa-solid fa-phone pe-2"></i>15-6577-6756</p>
           </div>
           <div className='d-flex gap-2'>
-            <span class="material-symbols-outlined">
-              mail
-            </span>
-            <p>contacto@magazineinmobiliario.com.ar</p>   
+            <p><i className="fa-solid fa-envelope pe-2"></i>contacto@magazineinmobiliario.com.ar</p>   
           </div>
         </div>
         <ContactForm/>

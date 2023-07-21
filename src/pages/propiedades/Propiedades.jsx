@@ -1,6 +1,6 @@
 import React from 'react'
-import ListadoPropiedades from '../../components/Propiedades/ListadoPropiedades'
-import Filtros from '../../components/Propiedades/Filtros'
+import ListadoPropiedades from '../../components/Propiedades/PropiedadesContainer/ListadoPropiedades'
+import Filtros from '../../components/Propiedades/Filtros/Filtros'
 import Pagination from '../../components/Pagination/Pagination'
 
 function Propiedades() {

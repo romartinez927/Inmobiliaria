@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { ciudades, tiposPropiedad } from '../../data.js';
+import { ciudades, tiposPropiedad } from '../../../data.js';
 import "./filtros.css"
 
 function Filtros() {
@@ -21,20 +21,18 @@ function Filtros() {
           }
         </select>
       </div>
-
       <div>
         <select id="tipo" className="custom-select pe-4" value={tipoSeleccionado} onChange={e => setTipoSeleccionado(e.target.value)}>
             <option value="Propiedad" disabled hidden>Propiedad</option>
-          {
-            tiposPropiedad.map(tipo => (
-                <option key={tipo} value={tipo}>
-                    {tipo}
-                </option>
-            ))
-          }
+            {
+              tiposPropiedad.map(tipo => (
+                  <option key={tipo} value={tipo}>
+                      {tipo}
+                  </option>
+              ))
+            } 
         </select>
       </div>
-
     </div>
   )
 }

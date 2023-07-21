@@ -8,9 +8,9 @@ function Footer() {
             <div className="container-fluid py-4">
                 <div className="row">
                     <div className="col-lg-5 col-md-6">
-                        <h5 className="h1 text-white">FB.</h5>
+                        <h5 className="h1 text-white">MB</h5>
                         <p className="small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        <p className="small text-white mb-0">&copy; Copyrights. All rights reserved. <a className="text-primary" href="#">Bootstrapious.com</a></p>
+                        <p className="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
                     </div>
                     <div className="col-lg-2 col-md-6">
                         <h5 className="text-white mb-3">Quick links</h5>
@@ -33,11 +33,11 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="footer-basic">
-                <div class="social">
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>    
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <div className="footer-basic">
+                <div className="social">
+                    <a href="#"><i className="fa-brands fa-whatsapp"></i></a>    
+                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
         </footer>

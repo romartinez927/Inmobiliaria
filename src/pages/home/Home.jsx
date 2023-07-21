@@ -8,15 +8,17 @@ function Home() {
   return (
     <div>
         <MainHeader/>
-        <div className="fw-100">
-            <div className="d-flex justify-content-center align-items-center gap-3 py-4">
-                {
-                    cajitas.map(({title}, index) => {
-                        return (
-                            <button key={index} className="px-3 py-2 btn btn-light">{title}</button>
-                        )
-                    })
-                }
+        <div className="container">
+            <div className="row">
+                <div className="d-flex flex-wrap justify-content-center gap-3 py-4">
+                    {
+                        cajitas.map(({title}, index) => {
+                            return (
+                                <button key={index} className="px-3 py-2 btn btn-light">{title}</button>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
         <div className="bg-light text-center w-100" style={{paddingBlock:"6em"}}>
@@ -29,15 +31,15 @@ function Home() {
                 <div className="form-group col-4">
                     <input type="email" className="form-control" placeholder="E-mail" />
                 </div>
-                <button type="submit" className="btn btn-primary col-1">Enviar</button>
+                <button type="submit" className="btn btn-success col-1">Enviar</button>
 
             </form>
         </div>
         
-        <div class="accordion-1">
-            <div class="area-1">
-            </div><div class="area-2">
-                <div class="accordion">
+        <div className="accordion-1">
+            <div className="area-1">
+            </div><div className="area-2">
+                <div className="accordion">
                     <h2>Sobre Nosotros</h2>
                     <p>Este año cumplimos 15 años, y los avances tecnológicos nos permitieron lograr cosas impensables hace muy poco tiempo. </p>
                     <p>Se modificaron hábitos y costumbres, desde reencontrarse con amigos a través de Facebook hasta avisar que estás en la puerta enviando un mensaje de Whatsapp.</p>

@@ -8,16 +8,25 @@ nav div ul li .nav-item {
 }
 
 .nav-item {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
+.logo {
+    color: #000;
+    transition: all ease 0.3s
+}
+
+.logo:hover {
+    color: #198754
+}
+
 .nav-item:hover {
-    color: #ffc8dd
+    color: #198754
 }
 
 .bg-menu {
-    background-color: rgba(240, 239, 235, 0.6);
+    background-color: #f3f7f8;;
 }
 
 .offcanvas {

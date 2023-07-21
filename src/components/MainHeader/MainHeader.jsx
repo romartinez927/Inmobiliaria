@@ -3,28 +3,26 @@ import "./mainHeader.css"
 
 function MainHeader() {
   return (
-    <div className="row header d-flex mx-auto">
-      <div className="d-flex bg-rgba flex-column justify-content-center align-items-center text-light" >
-        <h1 className="pb-2">Todo lo que necesitas para tu hogar</h1>
-        <div className="bg-light rounded p-2">
-          <form action="" className="d-flex gap-3 p-2">
-            <div className="form-group">
+    <div className="header d-flex mx-auto">
+      <div className="d-flex bg-rgba flex-column justify-content-center align-items-center text-light text-center" >
+        <h1 className="pb-3 title">Todo lo que necesitas para tu hogar</h1>
+        <div className="bg-light rounded-4 container-fluid p-2 mb-3" style={{maxWidth:"800px"}}>
+          <form action="" className="d-flex row justify-content-evenly px-4 py-3">
+            <div className="form-group col-sm-12 col-md-6">
               <input
                 type="text"
-                className="form-control"
-                style={{height:"3em", minWidth:"20em", fontSize: "17px"}}
+                className="form-control py-3"
                 placeholder="Ej, seguridad, alquiler, reparación"
               />
             </div>
-            <div className="form-group">
+            <div className="form-group col-sm-14 col-md-4">
               <input
                 type="text"
-                className="form-control"
-                style={{height:"3em", minWidth:"15em", fontSize: "17px"}}
+                className="form-control py-3"
                 placeholder="Tu barrio..."
               />
             </div>
-            <button className="btn btn-success">Buscar</button>
+            <button className="btn btn-success col-md-2 col-sm-4 fw-semibold rounded-4">Buscar</button>
           </form>
         </div>
       </div>

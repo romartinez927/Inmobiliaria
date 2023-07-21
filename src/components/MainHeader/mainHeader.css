@@ -2,11 +2,18 @@
     background: url("../../images/header.png");
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 75vh;
 
 }
 
 .bg-rgba {
     background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+	.title {
+        font-size: 2.4rem;
+    }
 }
