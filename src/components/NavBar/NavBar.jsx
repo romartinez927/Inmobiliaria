@@ -10,14 +10,14 @@ function NavBar() {
     <nav id="nav-menu" className='container-fluid bg-menu'>
         <div className="row">
             <div className="d-none col-2 d-md-flex justify-content-center ">
-                <a href="#" className="fw-700 my-auto fs-2 logo">MB</a>
+                <a href="#" className="fw-700 my-auto fs-2 logo">MI</a>
             </div>
             <ul className="d-none col-10 d-md-flex justify-content-end my-auto">
                 {
                     links.map(({name, path}, index) => {
                         return (
                             <li className="nav-item p-3 fs-5" key={index}>
-                            <NavLink className="nav-link" to={path}>{name}</NavLink>
+                                <NavLink className="nav-link" to={path}>{name}</NavLink>
                             </li>
                         
                         )
@@ -32,7 +32,7 @@ function NavBar() {
         </div>
         <div className="offcanvas offcanvas-start" tabIndex="-1" id="mobile-nav">
         <div className="offcanvas-header">
-            <h5 className="mobile-nav-title" id="mobile-nav-label">MB</h5>
+            <h5 className="mobile-nav-title" id="mobile-nav-label">MI</h5>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body container pt-3">

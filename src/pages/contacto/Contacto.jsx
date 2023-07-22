@@ -6,7 +6,7 @@ import ContactForm from '../../components/Contacto/ContactForm';
 function Contacto() {
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid py-4">
       <div className='d-flex row py-5 gap-5 justify-content-evenly'>
         <div className='col-md-4 col-12'>
           <h2>Contacto</h2>

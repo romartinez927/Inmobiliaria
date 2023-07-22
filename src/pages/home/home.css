@@ -1,33 +1,12 @@
-
-.cards-2 .h2-heading {
-	margin-bottom: 3.75rem;
-	text-align: center;
-}
-
-.cards-2 .card {
-	max-width: 350px;
-	margin-right: auto;
-	margin-bottom: 4.5rem;
-	margin-left: auto;
-	border: none;
-}
-
-.cards-2 .card img {
-	margin-bottom: 2rem;
-	border-radius: 10px;
-    height: 200px;
-    width: 350px;
-}
-
-.cards-2 .card-body {
-	padding: 0;
-}
-
-
 .accordion-1 .area-1 {
 	height: 440px;
 	background: url('https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80') center center no-repeat;
 	background-size: cover;
+	transition: all ease .5s;
+}
+
+.accordion-1 .area-1:hover {
+	opacity: .8;
 }
 
 .accordion-1 .area-2 {
@@ -43,6 +22,30 @@
 .accordion-1 h2 {
 	margin-bottom: 1rem;
 }
+
+.accordion-1 p {
+	font-size: 1.1em;
+}
+
+.blog-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Usar el color del texto padre */
+}
+
+.blog-link:hover {
+    text-decoration: none; /* Subrayar al hacer hover */
+    color: inherit; /* Cambiar color al hacer hover (por ejemplo, rojo) */
+}
+  
+.blog-link:active {
+    color: inherit; /* Cambiar color cuando el enlace está activo (por ejemplo, verde) */
+}
+
+.card-noticia:hover {
+    transform: scale(1.001);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease .5s;
+  }
 
 @media (min-width: 768px) {
 	.accordion-1 .accordion {

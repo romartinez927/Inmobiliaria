@@ -1,0 +1,13 @@
+.noticia-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Usar el color del texto padre */
+}
+
+.noticia-link:hover {
+    text-decoration: none; /* Subrayar al hacer hover */
+    color: inherit; /* Cambiar color al hacer hover (por ejemplo, rojo) */
+}
+  
+.noticia-link:active {
+    color: inherit; /* Cambiar color cuando el enlace está activo (por ejemplo, verde) */
+}

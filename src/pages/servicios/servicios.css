@@ -41,3 +41,9 @@
     border-radius: 15px 15px 15px 15px;
     cursor: pointer;
     }
+
+.card-servicios:hover {
+    transform: scale(1.001);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all ease .5s;
+}

@@ -6,7 +6,7 @@ import Pagination from '../../components/Pagination/Pagination'
 
 function blog() {
   return (
-    <div className='container-fluid pt-2'>
+    <div className='container pt-2'>
       <div className='d-flex row justify-content-center'>
         <div className='col-md-8 col-sm-12 pb-4'>
           <div className='container-fluid'>
@@ -34,22 +34,28 @@ function blog() {
             <div className='d-flex gap-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">1</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
             <div className='d-flex gap-3 pt-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">2</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
             <div className='d-flex gap-3 pt-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">3</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
           </div>
@@ -58,22 +64,28 @@ function blog() {
             <div className='d-flex gap-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">1</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
             <div className='d-flex gap-3 pt-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">2</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
             <div className='d-flex gap-3 pt-3 ps-3'>
               <p className="border rounded-circle px-3 py-2 my-auto">3</p>
               <div className='d-flex flex-column justify-content-center align-items-start'>
-                <p className='my-0'>Las casas más antiguas</p>
-                <p className='my-0'>10 agosto, 2022</p>
+                <a href="/blog/nota" className='noticia-link'>
+                  <p className='my-0'>Las casas más antiguas</p>
+                  <p className='my-0'>10 agosto, 2022</p>
+                </a>
               </div>
             </div>
           </div>
