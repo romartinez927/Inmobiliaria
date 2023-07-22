@@ -3,16 +3,26 @@ import "./noticia.css"
 
 function Noticia(props) {
   return (
-    <div className="card my-2 col-sm-5 col-md-5 px-0">
+    <div className="card rounded-3 col-sm-6 col-md-5 px-0">
       <a href="/blog/nota" className='noticia-link'>
-        <img src={props.img} className="card-img-top" alt="..."/>
-        <div className="card-body">
-          <div className='d-flex justify-content-between'>
-          <p className='my-1 fs-6'>{props.category}</p>
-          <p className='my-1 fs-6'>{props.date}</p>
+        <div className="img-container">
+          <a href="/" className="category-badge">{props.category}</a>
+          <div>
+            <img src={props.img} className="card-img-top rounded-top" height="230" width="550" alt={props.title}/>
           </div>
-          <h4 className="card-title fs-5">{props.title}</h4>
-          <p className="card-text" style={{fontSize: "1rem"}}>{props.text}</p>
+        </div>
+        <div className="card-body d-flex flex-column gap-1">
+          <div className='d-flex justify-content-start gap-3'>
+          <p className='my-1 noticia-autor fw-normal'>Katen Doe</p>
+          <i class="fa-solid fa-circle my-auto" style={{fontSize:"4px"}}></i>
+          <p className='my-1 noticia-autor fw-normal'>{props.date}</p>
+          </div>
+          <h5 className="card-title noticia-titulo mt-1">{props.title}</h5>
+          <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>{props.text}</p>
+          <div className='border-top d-flex justify-content-between pt-3'>
+            <i className="fa-solid fa-share-nodes fs-5"></i>
+            <i className="fa-solid fa-ellipsis fs-5"></i>
+          </div>
         </div>
       </a>
     </div>

@@ -115,23 +115,23 @@ export const servicios = [
 
 export const noticiasBlog = [
     {
-        title: "Kipen Asociados: Alarmas",
+        title: "Master The Art Of Nature With These 7 Tips",
         category: "Casas",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&usqp=CAU",
+        date: "31 marzo, 2023",
+        text: "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,…"
+    },
+    {
+        title: "How To Learn Everything About Construction",
+        category: "Casas",
+        img: "https://themeger.shop/wordpress/katen/personal/wp-content/uploads/sites/2/2022/08/loren-gu-146832-unsplash-550x367.jpg",
         date: "31 marzo, 2023",
         text: "Seleccionar un buen fotógrafo inmobiliario puede representar un desafío para los que no somos expertos en el tema."
     },
     {
         title: "Kipen Asociados: Alarmas",
         category: "Casas",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&usqp=CAU",
-        date: "31 marzo, 2023",
-        text: "Seleccionar un buen fotógrafo inmobiliario puede representar un desafío para los que no somos expertos en el tema."
-    },
-    {
-        title: "Kipen Asociados: Alarmas",
-        category: "Casas",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlCeVhPcF0B061dWx6Y2p6ZshztnAoVQI59g&usqp=CAU",
+        img: "https://images.unsplash.com/photo-1613395079988-fbd90f029d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=439&q=80",
         date: "31 marzo, 2023",
         text: "Seleccionar un buen fotógrafo inmobiliario puede representar un desafío para los que no somos expertos en el tema."
     },
