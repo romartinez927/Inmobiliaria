@@ -50,6 +50,13 @@ h5 {
   margin: 20px 0;
 }
 
+h3 {
+  color: #203656;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
 h6 {
   font-size: 15px;
 }
@@ -63,6 +70,23 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.padding-30 {
+  padding: 30px !important;
+}
+
+.bordered {
+  border: solid 1px #ebebeb;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.efecto-hover:hover {
+  color: #fe4f70;
+  transition: all .2s ease-in-out;
 }
 
 @media (prefers-color-scheme: light) {

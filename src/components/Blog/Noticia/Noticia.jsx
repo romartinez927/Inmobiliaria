@@ -3,7 +3,7 @@ import "./noticia.css"
 
 function Noticia(props) {
   return (
-    <div className="card rounded-3 col-sm-6 col-md-5 px-0">
+    <div className="card rounded-3 col-sm-6 col-md-5 px-0" style={{maxWidth: "350px"}}>
       <a href="/blog/nota" className='noticia-link'>
         <div className="img-container">
           <a href="/" className="category-badge">{props.category}</a>
@@ -14,10 +14,10 @@ function Noticia(props) {
         <div className="card-body d-flex flex-column gap-1">
           <div className='d-flex justify-content-start gap-3'>
           <p className='my-1 noticia-autor fw-normal'>Katen Doe</p>
-          <i class="fa-solid fa-circle my-auto" style={{fontSize:"4px"}}></i>
+          <i className="fa-solid fa-circle my-auto" style={{fontSize:"4px"}}></i>
           <p className='my-1 noticia-autor fw-normal'>{props.date}</p>
           </div>
-          <h5 className="card-title noticia-titulo mt-1">{props.title}</h5>
+          <h5 className="card-title noticia-titulo mt-1 efecto-hover">{props.title}</h5>
           <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>{props.text}</p>
           <div className='border-top d-flex justify-content-between pt-3'>
             <i className="fa-solid fa-share-nodes fs-5"></i>

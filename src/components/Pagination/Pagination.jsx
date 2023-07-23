@@ -7,13 +7,13 @@ function Pagination() {
         <nav className="pagination" aria-label="Page navigation example">
             <ul className="pagination d-flex justify-content-center mx-auto py-2 gap-2">
                 <li className="page-item">
-                  <span aria-current="page" class="page-numbers current">1</span>
+                  <span aria-current="page" className="page-numbers current">1</span>
                 </li>
                 <li className="page-item">
-                  <a class="page-numbers" href="/">2</a>
+                  <a className="page-numbers" href="/">2</a>
                 </li>
                 <li className="page-item">
-                  <a class="next page-numbers" href="https://themeger.shop/wordpress/katen/personal/page/2/">»</a>
+                  <a className="next page-numbers" href="https://themeger.shop/wordpress/katen/personal/page/2/">»</a>
                 </li>
             </ul>
         </nav>
