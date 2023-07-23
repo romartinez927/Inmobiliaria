@@ -8,7 +8,7 @@ import SidebarTags from '../SidebarTags/SidebarTags'
 function Nota() {
     return (
         <div className='pt-4'>
-            <div className='container'>
+            <div className='container pt-4'>
                 <div className="row">
                     <div className="col-md-8 d-flex flex-column nota-main" style={{color:"#707a88"}}>
                         <p className='fs-6 mb-2'>Magazine Inmobiliario / Culture / Feel Like A Pro With The Help Of These 7 Tips</p>

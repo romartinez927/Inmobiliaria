@@ -8,9 +8,9 @@ import SidebarCategorias from '../../components/Blog/SidebarCategorias/SidebarCa
 
 function blog() {
   return (
-    <div className="grid-container pt-4">
+    <div className="grid-container pt-4 mt-4 mx-auto" style={{maxWidth: "1140px"}}>
       <div className="item">
-        <div className="row gap-3 d-flex justify-content-center pb-3">
+        <div className="row gy-4 mx-0 d-flex justify-content-evenly pb-3">
           {
             noticiasBlog.map(({ title, img, text, category, date }, index) => {
               return (
