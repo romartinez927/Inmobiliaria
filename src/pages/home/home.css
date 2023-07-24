@@ -71,13 +71,13 @@
 	}
 	
 	.accordion-1 .area-1 {
-		width: 50%;
+		width: 30%;
 		height: 100%;
 		display: inline-block;
 	}
 	
 	.accordion-1 .area-2 {
-		width: 50%;
+		width: 70%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;

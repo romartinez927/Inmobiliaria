@@ -1,4 +1,6 @@
-import MainHeader from "../../components/MainHeader/MainHeader"
+import Noticia from "../../components/Blog/Noticia/Noticia"
+import Newsletter from "../../components/Home/Newsletter/Newsletter"
+import MainHeader from "../../components/Home/MainHeader/MainHeader"
 import { cajitas, noticias } from "../../data.js"
 import "./home.css"
 
@@ -21,21 +23,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="bg-light text-center w-100" style={{paddingBlock:"6em"}}>
-            <h3>¡No te pierdas ninguna de nuestras novedades!</h3>
-            <p>Suscríbete ahora y recibe todas las actualizaciones directamente en tu bandeja de entrada.</p>
-            <form action="" className="d-flex flex-column justify-content-center align-items-center gap-1">
-                <div className="form-group col-4">
-                    <input type="text" className="form-control" placeholder="Nombre y Apellido" />
-                </div>
-                <div className="form-group col-4">
-                    <input type="email" className="form-control" placeholder="E-mail" />
-                </div>
-                <button type="submit" className="btn btn-success col-1">Enviar</button>
-
-            </form>
-        </div>
-        
+        <Newsletter />
         <div id="projects" className="cards-2 py-5">
             <div className="container-fluid">
                 <div className="d-flex flex-column text-center">
@@ -44,16 +32,9 @@ function Home() {
                 </div>
                 <div className="d-flex row gap-3 justify-content-center py-3 mx-1">
                     {
-                        noticias.map(({img, title}, index) => {
+                        noticias.map(({img, title, date, text, category}, index) => {
                             return (
-                                <div key={index} className="card rounded col-md-5 col-ls-4 px-0 text-center card-noticia">
-                                    <a href="/blog/nota" className='noticia-link'>
-                                        <img src={img} className="card-img-top" height="230" alt={title} style={{objectFit: "cover"}}/>
-                                        <div className="card-body">
-                                        <h5 className="card-title">{title}</h5>
-                                        </div>
-                                    </a>
-                                </div>
+                                <Noticia key={index} img={img} title={title} date={date} text={text} category={category}/>
                             )   
                         })
                     } 
@@ -61,11 +42,11 @@ function Home() {
             </div> 
         </div>
 
-        <div className="accordion-1">
+        <div className="accordion-1 container-xl">
             <div className="area-1"></div>
-            <div className="area-2 bg-light">
+            <div className="area-2 bg-light ">
                 <div className="accordion">
-                    <h2 className="fs-5">Sobre Nosotros</h2>
+                    <h3>Sobre Nosotros</h3>
                     <p>Este año cumplimos 15 años, durante este tiempo pasó de todo, cambió el mundo, los avances de la tecnología nos han permitido lograr cosas que hubieran sido impensadas hace muy poco tiempo. </p>
                     <p>Junto con ella, se modificaron lo hábitos y las costumbres de la gente, desde reencontrarte con amigos a través de Facebook hasta avisar que estás en la puerta enviando un mensaje de whatsapp.</p>
                     <p>Hoy nuestro mundo es tan real como virtual y atentos a estos cambios y deseosos de seguir ayudando a nuestros clientes hemos comenzado una transformación que nos permitirá seguir un paso adelante brindando herramientas de comunicación cada vez más efectivas, enfocándonos en más y mejor contenido para estar cerca y ser útiles.</p>
