@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { servicios } from '../../data.js';
 import "./servicios.css"
 import Pagination from '../../components/Pagination/Pagination.jsx';
+import CardServicios from '../../components/Servicios/Card/CardServicios.jsx';
 
 function Servicios() {
     const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingresa ciudades o barrios');
@@ -19,16 +20,7 @@ function Servicios() {
                 {
                     servicios.map(({img, title, tag, ciudad}, index) => {
                         return (
-                            <div key={index} className="card rounded card-servicios col-md-3 mx-2 px-0 my-2">
-                                <a href="/" className='noticia-link'>
-                                    <img src={img} className="card-img-top" height="200" alt={title} style={{objectFit: "cover"}}/>
-                                    <div className="card-body">
-                                        <p>{tag}</p>
-                                        <p className='fw-medium mt-1 mb-2' style={{fontSize:"1rem"}}>{title}</p>
-                                        <p style={{fontSize:".9rem"}}>{ciudad}</p>
-                                    </div>
-                                </a>
-                            </div>
+                            <CardServicios img={img} title={title} tag={tag} ciudad={ciudad}/>
                         )   
                     })
                 } 

@@ -8,23 +8,25 @@ import SidebarCategorias from '../../components/Blog/SidebarCategorias/SidebarCa
 
 function blog() {
   return (
-    <div className="grid-container pt-4 mt-4 mx-auto" style={{maxWidth: "1140px"}}>
-      <div className="item">
-        <div className="row gy-4 mx-0 d-flex justify-content-evenly pb-3">
-          {
-            noticiasBlog.map(({ title, img, text, category, date }, index) => {
-              return (
-                <Noticia key={index} title={title} date={date} img={img} text={text} category={category} />
-              )
-            })
-          }
+    <div className="container-xl post-container pt-4 mt-4 mx-auto">
+      <div className="row gy-4">
+        <div className="col-lg-8 mx-auto">
+          <div className="row gy-4 d-flex justify-content-evenly gap-1">
+            {
+              noticiasBlog.map(({ title, img, text, category, date }, index) => {
+                return (
+                  <Noticia key={index} title={title} date={date} img={img} text={text} category={category} />
+                )
+              })
+            }
+          </div>
+          <Pagination />
         </div>
-        <Pagination />
-      </div>
-      <div className="item">
-        <SidebarNews title="Las más Leídas"/>
-        <SidebarNews title="Últimas Noticias"/>
-        <SidebarCategorias/>
+        <div className="col-lg-4">
+          <SidebarNews title="Las más Leídas"/>
+          <SidebarNews title="Últimas Noticias"/>
+          <SidebarCategorias/>
+        </div>
       </div>
     </div>
 

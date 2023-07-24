@@ -13,6 +13,7 @@ import Home from './pages/home/home'
 import Footer from './components/Footer/Footer'
 import Nota from './components/Blog/Nota/Nota'
 import Propiedad from './components/Propiedades/Propiedad/Propiedad'
+import Servicio from './components/Servicios/Servicio/Servicio'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="propiedades" element={<Propiedades/>}/>
           <Route path="propiedades/propiedad" element={<Propiedad/>}/>
           <Route path="servicios" element={<Servicios/>}/>
+          <Route path="servicios/servicio" element={<Servicio/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>
