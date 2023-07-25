@@ -3,16 +3,16 @@ import { useState } from 'react';
 
 function ContactForm() {
     const [formData, setFormData] = useState({
-        name: '',
+        author: '',
         email: '',
-        subject: '',
-        message: '',
+        comment: '',
+        asunto: ''
     });
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Aquí puedes agregar la lógica para enviar los datos a tu servidor o hacer cualquier acción que desees con los datos del formulario.
-        alert(`Nombre: ${formData.name}\nEmail: ${formData.email}\nAsunto: ${formData.subject}\nMensaje: ${formData.message}`);
+        alert(`Nombre: ${formData.author}\nEmail: ${formData.email}\nEmail: ${formData.asunto}\nMensaje: ${formData.comment}`);
     };
 
     const handleChange = (e) => {
@@ -20,59 +20,80 @@ function ContactForm() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
     return (
-        <form onSubmit={handleSubmit} className='col-md-5 col-sm-12 lh-sm'>
-            <div>
-                <label htmlFor="name" className='form-label ps-1'>Nombre:</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className='form-control'
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
+        <form onSubmit={handleSubmit} className='form-comentarios col-6 rounded bordered padding-30 mt-3'>
+            <div className='d-flex justify-content-between'>
+                <p className="comment-form-author">
+                    <label htmlFor="author">Nombre 
+                        <span className="required"> *</span>
+                    </label> 
+                    <input 
+                        id="author" 
+                        name="author" 
+                        type="text" 
+                        size="30" 
+                        maxLength="245" 
+                        autoComplete="name" 
+                        className='form-control'
+                        value={formData.author}
+                        onChange={handleChange}
+                        required
+                    />
+                </p>
+                <p className="comment-form-email">
+                    <label htmlFor="email">Email 
+                        <span className="required"> *</span>
+                    </label> 
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email" 
+                        size="30" 
+                        maxLength="100" 
+                        aria-describedby="email-notes" 
+                        autoComplete="email"
+                        className='form-control'
+                        value={formData.email}
+                        onChange={handleChange} 
+                        required=""
+                    />
+                </p>
             </div>
-
-            <div className='pt-2'>
-                <label htmlFor="email" className='form-label ps-1'>Correo electrónico:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
+            <p className="comment-form-asunto">
+                <label htmlFor="asunto">Asunto 
+                    <span className="required"> *</span>
+                </label> 
+                <input 
+                    id="asunto" 
+                    name="asunto" 
+                    type="asunto" 
+                    size="30" 
+                    maxLength="100" 
+                    aria-describedby="asunto-notes" 
+                    autoComplete="asunto"
                     className='form-control'
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
+                    value={formData.asunto}
+                    onChange={handleChange} 
+                    required=""
                 />
-            </div>
-            <div className='pt-2'>
-                <label htmlFor="subject" className='form-label ps-1'>Asunto:</label>
-                <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    className='form-control'
-                    value={formData.subject}
-                    onChange={handleChange}
+            </p>
+            <p className="comment-form-comment">
+                <label htmlFor="comment">Mensaje 
+                    <span className="required"> *</span>
+                </label>
+                <textarea 
+                    id="comment"
+                    name="comment"
+                    cols="45" 
+                    rows="8" 
+                    maxLength="65525" 
                     required
-                />
-            </div>
-
-            <div className='pt-2'>
-                <label htmlFor="message" className='form-label ps-1'>Mensaje:</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
+                    value={formData.comment}
                     onChange={handleChange}
                     className='form-control'
-                    style={{minHeight:"100px"}}
-                    required
-                />
-            </div>
-
-            <button type="submit">Enviar</button>
+                    style={{minHeight:"150px"}}
+                    ></textarea>
+            </p>
+            <button type="submit" className='btn-form-comentarios'>Enviar</button>
         </form>
     )
 }

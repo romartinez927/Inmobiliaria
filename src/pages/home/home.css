@@ -71,13 +71,13 @@
 	}
 	
 	.accordion-1 .area-1 {
-		width: 30%;
+		width: 40%;
 		height: 100%;
 		display: inline-block;
 	}
 	
 	.accordion-1 .area-2 {
-		width: 70%;
+		width: 60%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;
@@ -93,6 +93,22 @@
 		width: 85%;
 	}
 }
+
+         
+.btn-grad {
+	background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+	transition: 0.5s;
+	color: #fff;
+	padding: 9.5px 36px;
+	background-size: 200% auto;
+	border-radius: 25px;
+  }
+
+  .btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+  }
 
 @media (min-width: 1200px) {
     .cards-2 .card {

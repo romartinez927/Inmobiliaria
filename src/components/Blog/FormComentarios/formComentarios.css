@@ -33,14 +33,14 @@
     max-width: 50%;
 }
 
-.comment-form-author label, .comment-form-email label, .comment-form-comment label {
+.comment-form-author label, .comment-form-email label, .comment-form-comment label, .comment-form-asunto label {
     color: #8f9bad;
     font-size: 15px;
     font-weight: 700;
     padding: 0 0 6px 8px
 }
 
-.comment-form-author input, .comment-form-email input {
+.comment-form-author input, .comment-form-email input, .comment-form-asunto input {
     display: block;
     border-radius: 25px;
     width: 100%;

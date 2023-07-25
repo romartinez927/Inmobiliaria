@@ -41,12 +41,13 @@ function Home() {
                 </div>
             </div> 
         </div>
-
-        <div className="accordion-1 container-xl">
-            <div className="area-1"></div>
-            <div className="area-2 bg-light ">
-                <div className="accordion">
-                    <h3>Sobre Nosotros</h3>
+        <div className="ps-5 bg-light mb-0 py-3">
+            <h3 className="mb-0">Sobre Nosotros</h3>
+        </div>
+        <div className="accordion-1 bg-light text-center px-5 pb-5">
+            <div className="area-1 "></div>
+            <div className="area-2  mx-auto">
+                <div className="accordion text-start d-flex flex-column m-auto">
                     <p>Este año cumplimos 15 años, durante este tiempo pasó de todo, cambió el mundo, los avances de la tecnología nos han permitido lograr cosas que hubieran sido impensadas hace muy poco tiempo. </p>
                     <p>Junto con ella, se modificaron lo hábitos y las costumbres de la gente, desde reencontrarte con amigos a través de Facebook hasta avisar que estás en la puerta enviando un mensaje de whatsapp.</p>
                     <p>Hoy nuestro mundo es tan real como virtual y atentos a estos cambios y deseosos de seguir ayudando a nuestros clientes hemos comenzado una transformación que nos permitirá seguir un paso adelante brindando herramientas de comunicación cada vez más efectivas, enfocándonos en más y mejor contenido para estar cerca y ser útiles.</p>

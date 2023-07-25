@@ -3,7 +3,7 @@ import "./noticia.css"
 
 function Noticia(props) {
   return (
-    <div className="card rounded-3 col-sm-6 px-0" style={{maxWidth: "350px"}}>
+    <div className="card rounded-3 col-sm-6 px-0" style={{maxWidth: "350px", height: "max-content"}}>
       <a href="/blog/nota" className='noticia-link'>
         <div className="img-container">
           <a href="/" className="category-badge">{props.category}</a>

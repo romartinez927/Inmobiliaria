@@ -3,45 +3,15 @@ import "./footer.css"
 
 function Footer() {
   return (
-    <div>
-        <footer className="w-100 py-4 flex-shrink-0">
-            <div className="container-fluid py-4">
-                <div className="row">
-                    <div className="col-lg-5 col-md-6">
-                        <h5 className="h1 text-white">Magazine Inmobiliario</h5>
-                        <p className="small text-white mb-0">&copy; Copyrights. All rights reserved.</p>
-                    </div>
-                    <div className="col-lg-2 col-md-6">
-                        <h5 className="text-white mb-3">Quick links</h5>
-                        <ul className="list-unstyled text-muted">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/ediciones">Ediciones</a></li>
-                            <li><a href="/contacto">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <h5 className="text-white mb-3">Newsletter</h5>
-                        <p className="small text-muted">¡Suscríbete a nuestra newsletter para recibir las últimas novedades!</p>
-                        <form action="#">
-                            <div className="input-group mb-3">
-                                <input className="form-control" type="text" placeholder="Correo Electrónico" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                                <button className="btn btn-primary" id="button-addon2" type="button"><i className="fas fa-paper-plane"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div className="footer-basic">
-                <div className="social">
-                    <a href="#"><i className="fa-brands fa-whatsapp"></i></a>    
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
-        </footer>
-        
-    </div>
+    <footer className='d-flex flex-column justify-content-center align-items-center pt-5 pb-2'>
+        <div className="social d-flex gap-3 py-2">
+            <a href="#"><i className="fa-brands fa-whatsapp fs-4"></i></a>    
+            <a href="#"><i className="fa-brands fa-instagram fs-4"></i></a>
+            <a href="#"><i className="fa-brands fa-facebook fs-4"></i></a>
+        </div>
+        <p className='mb-1 fw-medium'>Copyright © 2023 Magazine Inmobiliario.</p>
+        <p>Desarrollado por <a href="https://github.com/romartinez927">romartinez927</a></p>
+    </footer>
   )
 }
 

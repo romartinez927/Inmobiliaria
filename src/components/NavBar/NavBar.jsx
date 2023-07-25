@@ -9,10 +9,12 @@ function NavBar() {
   return (
     <nav id="nav-menu" className='container-fluid bg-menu'>
         <div className="row">
-            <div className="d-none col-2 d-md-flex justify-content-center ">
-                <a href="#" className="fw-700 my-auto fs-2 logo">MI</a>
+            <div className="d-none col-3 d-md-flex justify-content-center ">
+                <a href="#" className="fw-700 my-auto logo" >
+                    <img src="src\images\logo.png" alt="Magazine Inmobiliario" width="170" />
+                </a>
             </div>
-            <ul className="d-none col-10 d-md-flex justify-content-end my-auto">
+            <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
                 {
                     links.map(({name, path}, index) => {
                         return (

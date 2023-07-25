@@ -8,7 +8,7 @@ function Newsletter() {
             <h3>¡No te pierdas ninguna de nuestras novedades!</h3>
             <p>Suscríbete ahora y recibe todas las actualizaciones directamente en tu bandeja de entrada.</p>
             <form action="" className='form-newsletter d-flex justify-content-center gap-1'>
-                <input type="email" name="EMAIL" placeholder="Your email address" required=""/>
+                <input type="email" name="EMAIL" placeholder="Email" required=""/>
                 <button type="submit" className="btn-form-comentarios" value="Sign up">Enviar</button>
             </form>
         </div>

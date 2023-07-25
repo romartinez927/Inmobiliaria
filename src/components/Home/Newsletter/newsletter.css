@@ -5,7 +5,7 @@
 .form-newsletter input{
     display: block;
     border-radius: 25px;
-    width: 30%;
+    min-width: 300px;
     padding: 8px 24px;
     font-size: 14px;
     line-height: 1.6;
@@ -17,3 +17,8 @@
     box-shadow: none;
 }
 
+@media (max-width: 500px) {
+    .form-newsletter input{
+        width: 100%;
+    }
+}
