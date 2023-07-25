@@ -11,6 +11,15 @@
     background: linear-gradient(to right,#fe4f70 0%,#ffa387 51%,#fe4f70 100%);
     background-size: 200% auto;
     border-radius: 25px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-form-comentarios:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
 }
 
 .comment-form-comment textarea {

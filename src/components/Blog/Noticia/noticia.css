@@ -49,7 +49,9 @@
 }
 
 .category-badge:hover {
+    background-position: right center; 
     color: #fff;
+    text-decoration: none;
 }
 
 .img-container div{

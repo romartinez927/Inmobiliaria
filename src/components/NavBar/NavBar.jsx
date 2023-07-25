@@ -11,14 +11,14 @@ function NavBar() {
         <div className="row">
             <div className="d-none col-3 d-md-flex justify-content-center ">
                 <a href="#" className="fw-700 my-auto logo" >
-                    <img src="src\images\logo.png" alt="Magazine Inmobiliario" width="170" />
+                    <img src="src\images\logo.png" alt="Magazine Inmobiliario" width="130" />
                 </a>
             </div>
             <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
                 {
                     links.map(({name, path}, index) => {
                         return (
-                            <li className="nav-item p-3 fs-5" key={index}>
+                            <li className="nav-item p-3" key={index}>
                                 <NavLink className="nav-link" to={path}>{name}</NavLink>
                             </li>
                         

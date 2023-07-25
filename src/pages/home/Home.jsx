@@ -16,7 +16,7 @@ function Home() {
                     {
                         cajitas.map(({title}, index) => {
                             return (
-                                <a key={index} className="px-3 py-2 btn btn-light" href="/servicios">{title}</a>
+                                <a key={index} className="px-3 py-2 btn-home " href="/servicios">{title}</a>
                             )
                         })
                     }
@@ -27,7 +27,7 @@ function Home() {
         <div id="projects" className="cards-2 py-5">
             <div className="container-fluid">
                 <div className="d-flex flex-column text-center">
-                    <h2>Novedades y Tips</h2>
+                    <h3 className="mb-1">Novedades y Tips</h3>
                     <p>Revisa las últimas novedades de nuestro blog.</p>
                 </div>
                 <div className="d-flex row gap-3 justify-content-center py-3 mx-1">
