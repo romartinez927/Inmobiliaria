@@ -6,6 +6,10 @@
     height: 42vh;
 }
 
+.header form {
+    max-width: 60%;
+}
+
 .bg-rgba {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -25,5 +29,8 @@
     }
     .header {
         height: 60vh;
+    }
+    .header form {
+        max-width: 90%;
     }
 }

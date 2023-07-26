@@ -56,7 +56,7 @@ function Nota() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="tags">
+                            <div className="tags nota">
                                 <a href="/">#Content</a>
                                 <a href="/">#Image</a>
                                 <a href="/">#Pic</a>

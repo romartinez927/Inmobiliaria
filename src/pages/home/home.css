@@ -129,6 +129,10 @@
 	text-decoration: none;
 }
 
+.tags.home a {
+	color: #203656;
+}
+
 @media (min-width: 1200px) {
     .cards-2 .card {
         width: 300px;

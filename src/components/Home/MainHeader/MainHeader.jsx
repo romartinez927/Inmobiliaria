@@ -5,9 +5,9 @@ function MainHeader() {
     <div className="header d-flex mx-auto">
       <div className="d-flex bg-rgba flex-column justify-content-center align-items-center text-light text-center" >
         <h1 className="pb-2 title-header">Todo lo que necesitas para tu hogar</h1>
-        <div className="rounded container-fluid p-2 mb-3" style={{maxWidth:"750px", backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
-          <form action="" className="d-flex row px-2 py-1">
-            <div className="form-group col-sm-12 col-md-6">
+        <div className="container-fluid " >
+          <form action="" className="row rounded pb-2 pe-2 mb-3 mx-auto d-flex justify-content-center gy-2" style={{backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
+            <div className="form-group col-md-6">
               <input
                 type="text"
                 className="form-control ps-4"
@@ -15,7 +15,7 @@ function MainHeader() {
                 placeholder="Ej, seguridad, alquiler, reparación"
               />
             </div>
-            <div className="form-group col-sm-14 col-md-4">
+            <div className="form-group col-md-4">
               <input
                 type="text"
                 className="form-control ps-4"
@@ -23,7 +23,7 @@ function MainHeader() {
                 placeholder="Tu barrio..."
               />
             </div>
-            <button className="btn btn-success col-md-2 col-sm-4 fw-semibold rounded-5">Buscar</button>
+            <button className="btn btn-success fw-semibold rounded-5 col-md-2" style={{paddingBlock: "10px", maxWidth: "150px"}}>Buscar</button>
           </form>
         </div>
       </div>

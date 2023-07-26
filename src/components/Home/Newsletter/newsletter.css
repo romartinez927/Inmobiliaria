@@ -1,6 +1,3 @@
-.newsletter {
-    background-color: #f2f2f2;
-}
 
 .form-newsletter input{
     display: block;
@@ -17,8 +14,3 @@
     box-shadow: none;
 }
 
-@media (max-width: 500px) {
-    .form-newsletter input{
-        width: 100%;
-    }
-}

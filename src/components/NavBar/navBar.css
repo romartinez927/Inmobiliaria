@@ -30,6 +30,83 @@ nav div ul li .nav-item {
 }
 
 .offcanvas {
-    max-width: 70% !important
+    max-width: 310px !important
+}
+
+.canvas {
+    background: #fff;
+    height: 100vh;
+    padding: 40px;
+    width: 300px;
+}
+
+.offcanvas-header button {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    padding: 0.25em;
+    color: #000;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: .4;
+    right: 30px;
+    top: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.offcanvas-header logo {
+    margin-bottom: 80px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.canvas-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.canvas-menu li {
+    padding: 0;
+    position: relative;
+    list-style: none;
+    transition: all .2s ease-in-out;
+}
+
+.canvas-li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background: #ebebeb;
+    background: -webkit-linear-gradient(left,#ebebeb 0%,transparent 100%);
+    background: linear-gradient(to right,#ebebeb 0%,transparent 100%);
+}
+
+.canvas-menu li a{
+    color: #203656;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.switch {
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px;
+    line-height: 1;
+    cursor: pointer;
+    color: #fe4f70;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 

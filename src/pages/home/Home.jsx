@@ -1,30 +1,27 @@
-import Noticia from "../../components/Blog/Noticia/Noticia"
 import Newsletter from "../../components/Home/Newsletter/Newsletter"
 import MainHeader from "../../components/Home/MainHeader/MainHeader"
 import { cajitas, noticias } from "../../data.js"
 import "./home.css"
-
-import React from 'react'
+import NoticiaHome from "../../components/Home/NoticiaHome/NoticiaHome"
 
 function Home() {
   return (
-    <div>
+    <div className="bg-light">
         <MainHeader/>
         <div className="container">
             <div className="row">
-                <div className="d-flex flex-wrap justify-content-center gap-3 py-4">
+                <div className="d-flex flex-wrap justify-content-center gap-3 py-4 tags home">
                     {
                         cajitas.map(({title}, index) => {
                             return (
-                                <a key={index} className="px-3 py-2 btn-home " href="/servicios">{title}</a>
+                                <a key={index} className="px-3 py-2 fs-6" href="/servicios">{title}</a>
                             )
                         })
                     }
                 </div>
             </div>
         </div>
-        <Newsletter />
-        <div id="projects" className="cards-2 py-5">
+        <div id="projects" className="cards-2 pt-2 pb-4 bg-light">
             <div className="container-fluid">
                 <div className="d-flex flex-column text-center">
                     <h3 className="mb-1">Novedades y Tips</h3>
@@ -34,13 +31,14 @@ function Home() {
                     {
                         noticias.map(({img, title, date, text, category}, index) => {
                             return (
-                                <Noticia key={index} img={img} title={title} date={date} text={text} category={category}/>
+                                <NoticiaHome key={index} img={img} title={title} date={date} text={text} category={category}/>
                             )   
                         })
                     } 
                 </div>
             </div> 
         </div>
+        <Newsletter />
         <div className="ps-5 bg-light mb-0 py-3">
             <h3 className="mb-0">Sobre Nosotros</h3>
         </div>
