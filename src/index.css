@@ -1,5 +1,5 @@
 #root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -109,7 +109,7 @@ button {
 }
 
 .efecto-hover:hover {
-  color: #fe4f70;
+  color: #e63946;
   transition: all .2s ease-in-out;
 }
 

@@ -6,14 +6,19 @@ import Pagination from '../../components/Pagination/Pagination.jsx';
 import CardServicios from '../../components/Servicios/Card/CardServicios.jsx';
 
 function Servicios() {
-    const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingresa ciudades o barrios');
   return (
-    <div className='pt-4'>
-        <div className='search-box col-md-5 col-sm-12 mx-auto px-4'>
-            <form className="d-flex search-form" role="search">
-                <input className="form-control me-2 search-text" type="search" placeholder="Search" aria-label="Search" />
-                <button className="search-button" type="submit">Buscar</button>
-            </form>
+    <div className='pt-2 container-xl'>
+        <div className='row d-flex align-items-center justify-content-between px-4'>
+            <div className='col-md-5 servicios-title d-flex flex-column'>
+                <h3 className='mb-0 '>Servicios</h3>
+                <svg className='mb-2' width="33" height="6" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stopColor="#e63946"></stop><stop offset="100%" stopColor="#FFA387"></stop></linearGradient></defs><path d="M33 1c-3.3 0-3.3 4-6.598 4C23.1 5 23.1 1 19.8 1c-3.3 0-3.3 4-6.599 4-3.3 0-3.3-4-6.6-4S3.303 5 0 5" stroke="url(#gradient)" strokeWidth="2" fill="none"></path></svg>
+            </div>
+            <div className='search-box col-md-5 col-sm-7 pt-4 rounded'>
+                <form className="d-flex search-form" role="search">
+                    <input className="form-control me-2 search-text" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="search-button mt-4" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
         <div className="container-fluid">
             <div className='d-flex row gap-3 justify-content-center py-3 mx-1'>

@@ -23,7 +23,7 @@ function MainHeader() {
                 placeholder="Tu barrio..."
               />
             </div>
-            <button className="btn btn-success fw-semibold rounded-5 col-md-2" style={{paddingBlock: "10px", maxWidth: "150px"}}>Buscar</button>
+            <button className="btn btn-red fw-semibold rounded-5 col-md-2" style={{paddingBlock: "10px", maxWidth: "150px"}}>Buscar</button>
           </form>
         </div>
       </div>

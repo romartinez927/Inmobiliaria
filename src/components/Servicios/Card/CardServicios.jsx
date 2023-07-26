@@ -15,14 +15,12 @@ function CardServicios(props) {
           <p className='my-1 noticia-autor fw-normal'>{props.ciudad}</p>
           <h4 className="card-title noticia-titulo mt-1 fw-bold efecto-hover">{props.title}</h4>
           <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>Desde 1970, trabajando con Seriedad, respeto y confianza.</p>
-          <div className='border-top d-flex justify-content-between pt-3'>
-            <div className='d-flex gap-2 efecto-hover'>
-                <i className="fa-regular fa-bookmark mt-1"></i>
-                <p className="fs-6">Guardar</p>
+          <div className='border-top d-flex justify-content-between pt-3 px-1'>
+            <div className='d-flex efecto-hover'>
+              <i className="fa-solid fa-share-nodes fs-4 efecto-hover"></i>
             </div>
-            <div className='d-flex gap-2 efecto-hover'>
-                <i className="fa-solid fa-eye mt-1"></i>
-                <p className="fs-6">Visto</p>
+            <div className='d-flex efecto-hover'>
+              <a href="#"><i className="fa-brands fa-whatsapp servicios fs-4"></i></a>    
             </div>
           </div>
         </div>

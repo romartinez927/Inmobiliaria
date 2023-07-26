@@ -22,10 +22,13 @@ function Servicio() {
                         <p><i className="fa-solid fa-globe me-2"></i>http://www.rocchio.com.ar</p>
                         <ul className="social-icons list-inline">
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                <a href="/" target="_blank"><i className="fa-brands fa-facebook"></i></a>
                             </li>
                             <li className="list-inline-item pe-2">
                                 <a href="/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li className="list-inline-item pe-2">
+                                <a href="/" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
                             </li>
                         </ul>
                     </div>

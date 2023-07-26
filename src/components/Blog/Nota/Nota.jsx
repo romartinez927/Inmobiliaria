@@ -10,7 +10,7 @@ function Nota() {
         <div className='pt-4'>
             <div className='container pt-4'>
                 <div className="row">
-                    <div className="col-md-8 d-flex flex-column nota-main" style={{color:"#707a88"}}>
+                    <div className="col-md-8 col-lg-8 d-flex flex-column nota-main" style={{color:"#707a88"}}>
                         <p className='fs-6 mb-2'>Magazine Inmobiliario / Culture / Feel Like A Pro With The Help Of These 7 Tips</p>
                         <h1 className="fw-bold mb-2 title">Easy Ways To Learn Everything About Construction</h1>
                         <div className="d-flex gap-2 py-1">
@@ -62,7 +62,7 @@ function Nota() {
                                 <a href="/">#Pic</a>
                             </div>
                         </div>
-                        <div className='row nextprev-post-wrapper justify-content-between py-3 gy-2'>
+                        <div className='row nextprev-post-wrapper justify-content-between py-3 gy-2 px-2'>
                             <div className='col-md-5 col-12 nextprev-post prev border'>
                                 <p className='mb-0'>Previous Post</p>
                                 <h5 className='mt-1 efecto-hover'>How To Buy Bulb On a Tight Budget</h5>
@@ -78,7 +78,7 @@ function Nota() {
                                 <svg width="33" height="6" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                            <stop offset="0%" stopColor="#FE4F70"></stop>
+                                            <stop offset="0%" stopColor="#e63946"></stop>
                                             <stop offset="100%" stopColor="#FFA387"></stop>
                                         </linearGradient>
                                     </defs>
@@ -88,7 +88,7 @@ function Nota() {
                             <FormComentarios />
                         </div>
                     </div>
-                    <div className="col-md-4 pt-5 nota-sidebar">
+                    <div className="col-md-4 col-lg-4 pt-5 nota-sidebar">
                         <SidebarNews title="Últimas Noticias" />
                         <SidebarCategorias />
                         <SidebarTags/>

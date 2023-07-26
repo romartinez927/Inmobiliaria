@@ -28,7 +28,6 @@
 }
 
 .social-icons li a{
-    color: #203656;
     transition: all ease .5s;
 }
 
@@ -52,13 +51,13 @@
 }
 
 .tags a:hover {
-    color: #fe4f70;
+    color: #e63946;
     outline: 0;
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    border: solid 1px #fe4f70;
+    border: solid 1px #e63946;;
 }
 
 @media screen and (max-width: 990px) {

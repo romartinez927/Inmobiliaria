@@ -20,7 +20,7 @@ function ContactForm() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
     return (
-        <form onSubmit={handleSubmit} className='form-comentarios col-6 rounded bordered padding-30 mt-3'>
+        <form onSubmit={handleSubmit} className='form-comentarios col-md-6 col-sm-12 rounded bordered padding-30 mt-3'>
             <div className='d-flex justify-content-between'>
                 <p className="comment-form-author">
                     <label htmlFor="author">Nombre 

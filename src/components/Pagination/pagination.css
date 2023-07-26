@@ -21,8 +21,8 @@
     color: #fff;
     border-color: transparent;
     background: #ffa387;
-    background: -webkit-linear-gradient(bottom,#ffa387 0%,#fe4f70 51%,#ffa387 100%);
-    background: linear-gradient(to top,#ffa387 0%,#fe4f70 51%,#ffa387 100%);
+    background: -webkit-linear-gradient(bottom,#ffa387 0%,#e63946 51%,#ffa387 100%);
+    background: linear-gradient(to top,#ffa387 0%,#e63946 51%,#ffa387 100%);
     background-size: auto 200%;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15);
     -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,.15);
@@ -34,7 +34,7 @@
 
 .page-numbers:hover {
     background: #ffa387;
-    background: -webkit-linear-gradient(bottom,#ffa387 0%,#fe4f70 51%,#ffa387 100%);
-    background: linear-gradient(to top,#ffa387 0%,#fe4f70 51%,#ffa387 100%);
+    background: -webkit-linear-gradient(bottom,#ffa387 0%,#e63946 51%,#ffa387 100%);
+    background: linear-gradient(to top,#ffa387 0%,#e63946 51%,#ffa387 100%);
     color: #fff;
 }

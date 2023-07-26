@@ -40,8 +40,8 @@
     top: 20px;
     position: relative;
     z-index: 2;
-    background: #fe4f70;
-    background: linear-gradient(to right,#fe4f70 0%,#ffa387 51%,#fe4f70 100%);
+    background: #e63946;
+    background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
     background-size: 200% auto;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
