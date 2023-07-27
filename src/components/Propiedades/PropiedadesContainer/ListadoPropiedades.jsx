@@ -22,7 +22,7 @@ function ListadoPropiedades() {
     if (windowWidth >= 800) {
       return (
       <div className='d-flex px-4 pt-3 justify-content-center' style={{lineHeight:"20px"}}>
-        <a href="/propiedades/propiedad" className='propiedad-link'>
+        <a href="/Inmobiliaria/propiedades/propiedad" className='propiedad-link'>
           <div className='d-flex bg-white justify-content-between gap-2 border propiedad-listado rounded'>
             <div className='image-container'>
               <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />

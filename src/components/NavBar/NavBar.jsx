@@ -22,10 +22,10 @@ function NavBar() {
             </div>
             <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
                 <li className="nav-item p-3">
-                    <NavLink className="nav-link" to="/">Home</NavLink>
+                    <NavLink className="nav-link" to="/Inmobiliaria/">Home</NavLink>
                 </li>
                 <li className="nav-item p-3">
-                    <NavLink className="nav-link" to="/blog">Blog</NavLink>
+                    <NavLink className="nav-link" to="/Inmobiliaria/blog">Blog</NavLink>
                 </li>
                 <li className="dropdownn p-3 nav-item">
                     <a className="pruebaa nav-link">Ediciones</a>
@@ -39,13 +39,13 @@ function NavBar() {
                     </div>
                 </li>
                 <li className="nav-item p-3">
-                    <NavLink className="nav-link" to="/servicios">Servicios</NavLink>
+                    <NavLink className="nav-link" to="/Inmobiliaria/servicios">Servicios</NavLink>
                 </li>
                 <li className="nav-item p-3">
-                    <NavLink className="nav-link" to="/propiedades">Propiedades</NavLink>
+                    <NavLink className="nav-link" to="/Inmobiliaria/propiedades">Propiedades</NavLink>
                 </li>
                 <li className="nav-item p-3">
-                    <NavLink className="nav-link" to="/contacto">Contacto</NavLink>
+                    <NavLink className="nav-link" to="/Inmobiliaria/contacto">Contacto</NavLink>
                 </li>
             </ul>
         </div>
@@ -63,10 +63,10 @@ function NavBar() {
                 <div className="row">
                     <ul className="d-flex flex-column canvas-menu">
                         <li className="canvas-li">
-                            <a className="nav-link" href="/">Home</a>
+                            <a className="nav-link" href="/Inmobiliaria/">Home</a>
                         </li>
                         <li className="canvas-li">
-                            <a className="nav-link" href="/blog">Blog</a>
+                            <a className="nav-link" href="/Inmobiliaria/blog">Blog</a>
                         </li>
                         <li className="canvas-li">
                             <div className="d-flex justify-content-between me-3">
@@ -88,13 +88,13 @@ function NavBar() {
                             }
                         </li>
                         <li className="canvas-li">
-                            <a className="nav-link" href="/propiedades">Propiedades</a>
+                            <a className="nav-link" href="/Inmobiliaria/propiedades">Propiedades</a>
                         </li>
                         <li className="canvas-li">
-                            <a className="nav-link" href="/servicios">Servicios</a>
+                            <a className="nav-link" href="/Inmobiliaria/servicios">Servicios</a>
                         </li>
                         <li className="canvas-li">
-                            <a className="nav-link" href="/contacto">Contacto</a>
+                            <a className="nav-link" href="/Inmobiliaria/contacto">Contacto</a>
                         </li>
                     </ul> 
                 </div>

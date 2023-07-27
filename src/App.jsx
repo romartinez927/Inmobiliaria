@@ -5,7 +5,7 @@ import Blog from './pages/blog/blog'
 import Ediciones from './pages/ediciones/ediciones'
 import Contacto from './pages/contacto/contacto'
 import NotFound from './pages/notFound/notFound'
-import Propiedades from './pages/propiedades/propiedades'
+import Propiedades from './pages/propiedades/Propiedades'
 import Navbar from './components/NavBar/NavBar'
 import { BrowserRouter, Router, Route, Routes, useLocation } from 'react-router-dom'
 import Servicios from './pages/servicios/Servicios'
@@ -21,14 +21,14 @@ function App() {
     <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="contacto" element={<Contacto/>}/>
-          <Route path="blog" element={<Blog/>}/>
-          <Route path="blog/nota" element={<Nota/>}/>
-          <Route path="propiedades" element={<Propiedades/>}/>
-          <Route path="propiedades/propiedad" element={<Propiedad/>}/>
-          <Route path="servicios" element={<Servicios/>}/>
-          <Route path="servicios/servicio" element={<Servicio/>}/>
+          <Route path="/Inmobiliaria/" element={<Home/>}/>
+          <Route path="/Inmobiliaria/contacto" element={<Contacto/>}/>
+          <Route path="/Inmobiliaria/blog" element={<Blog/>}/>
+          <Route path="/Inmobiliaria/blog/nota" element={<Nota/>}/>
+          <Route path="/Inmobiliaria/propiedades" element={<Propiedades/>}/>
+          <Route path="/Inmobiliaria/propiedades/propiedad" element={<Propiedad/>}/>
+          <Route path="/Inmobiliaria/servicios" element={<Servicios/>}/>
+          <Route path="/Inmobiliaria/servicios/servicio" element={<Servicio/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
         <Footer/>
