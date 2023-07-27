@@ -23,7 +23,7 @@ function NoticiaHome(props) {
          
           <div className='border-top d-flex justify-content-between pt-3'>
             <i className="fa-solid fa-share-nodes fs-5 efecto-hover"></i>
-            <a href="/blog/nota">
+            <a href="/blog/nota" style={{color: "#707a88"}}>
                 <i className="fa-solid fa-ellipsis fs-5 efecto-hover"></i>
             </a>
           </div>

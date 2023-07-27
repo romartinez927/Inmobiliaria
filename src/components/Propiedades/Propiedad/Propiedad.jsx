@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from '../../CarouselImages/Carousel'
 import "./propiedad.css"
+import PropiedadContacto from '../PropiedadContacto/PropiedadContacto'
+import PropiedadSimilar from '../PropiedadSimilar/PropiedadSimilar'
 
 function Propiedad() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -21,17 +23,17 @@ function Propiedad() {
   const renderComponent = () => {
     if (windowWidth >= 1000) {
       return (
-        <div>
-            <div className='d-flex ps-5 py-2 align-items-center gap-2 fw-semibold small'>
-                <p className='my-auto'>Inicio</p>
+        <div className='container-fluid pt-2'>
+            <div className='d-flex ps-5 py-2 align-items-center gap-2'>
+                <h6 className='my-auto'>Inicio</h6>
                 <span className="material-symbols-outlined" style={{fontSize:"15px"}}>
                     arrow_forward_ios
                 </span>
-                <p className='my-auto'>Tristan Suarez</p>
+                <h6 className='my-auto'>Tristan Suarez</h6>
                 <span className="material-symbols-outlined" style={{fontSize:"15px"}}>
                     arrow_forward_ios
                 </span>
-                <p className='my-auto'>Casas en Tristan Suarez</p>
+                <h6 className='my-auto'>Casas en Tristan Suarez</h6>
             </div>
             <div className='d-flex justify-content-evenly'>
                 <div className='col-7'>
@@ -48,90 +50,30 @@ function Propiedad() {
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.787837283488!2d-58.51178013022461!3d-34.61814369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9d1593c9e23%3A0x12bbcca2d4c0246f!2sAv.%20%C3%81lvarez%20Jonte%204543%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689615880524!5m2!1ses-419!2sar" width="600" height="200" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div className='col-4'>
-                    <div className='d-flex align-items-center justify-content-center py-3 px-2 gap-2 border rounded'>
-                        <img src="https://www.staticbp.com/img/inmobiliarias/saman.png" width="100" alt="" />
-                        <p className='my-auto fw-semibold'>Samaniego Propiedades</p>
-                    </div>
-                    <form action="" method="post" className='form-propiedad mt-2 px-3 py-2 border rounded'>
-                        <p className='fw-semibold'>Contactar a la Inmobiliaria</p>
-                        <div>
-                            <input type="text" id="nombre" name="nombre" required placeholder='Nombre y Apellido'/>
-                        </div>
-                        <div>
-                            <input type="email" id="email" name="email" required placeholder='Email'/>
-                        </div>
-                        <div>
-                            <input type="tel" id="telefono" name="telefono" required placeholder='Teléfono'/>
-                        </div>
-                        <div>
-                            <textarea id="mensaje" name="mensaje" required placeholder='Hola, me interesa esta propiedad que vi en Magazine Inmobiliario y quisiera que me contacten. Muchas gracias.'></textarea>
-                        </div>
-                        <button type="submit" className='btn btn-success col-12' data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
-                        
-                        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div className="modal-dialog">
-                            <div className="modal-content">
-                            <div className="modal-header">
-                                <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div className="modal-body">
-                                ...
-                            </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary">Save changes</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </form>
-                </div>
+                <PropiedadContacto/>
             </div>
             <div className='py-5'>
-                <h5 className='px-3'>Propiedades similares</h5>
+                <h4 className='px-3 text-center'>Propiedades similares</h4>
                 <div className='d-flex gap-3 py-2 justify-content-center'>
-                    <div className="card" style={{width:"15rem"}}>
-                        <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width:"15rem"}}>
-                        <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width:"15rem"}}>
-                        <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width:"15rem"}}>
-                        <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
+                    <PropiedadSimilar/>
+                    <PropiedadSimilar/>
+                    <PropiedadSimilar/>
                 </div>
             </div>
         </div>
       )}  else {
         return (
             <div>
-                <div className='d-flex ps-5 py-2 align-items-center gap-2 fw-semibold small'>
-                    <p className='my-auto'>Inicio</p>
+                <div className='d-flex ps-3 py-2 align-items-center gap-2 fw-semibold small'>
+                    <h6 className='my-auto'>Inicio</h6>
                     <span className="material-symbols-outlined" style={{fontSize:"15px"}}>
                         arrow_forward_ios
                     </span>
-                    <p className='my-auto'>Tristan Suarez</p>
+                    <h6 className='my-auto'>Tristan Suarez</h6>
                     <span className="material-symbols-outlined" style={{fontSize:"15px"}}>
                         arrow_forward_ios
                     </span>
-                    <p className='my-auto'>Casas en Tristan Suarez</p>
+                    <h6 className='my-auto'>Casas en Tristan Suarez</h6>
                 </div>
                 <div className='d-flex flex-column px-2'>
                     <Carousel/>
@@ -144,59 +86,18 @@ function Propiedad() {
                     <div className='d-flex flex-column px-3'>
                         <h4>Ubicación</h4>
                         <p>Hernan Cortez 1258, Tristán Suárez</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.787837283488!2d-58.51178013022461!3d-34.61814369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9d1593c9e23%3A0x12bbcca2d4c0246f!2sAv.%20%C3%81lvarez%20Jonte%204543%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689615880524!5m2!1ses-419!2sar"  width="400" height="200" className="mx-auto" style={{border:0}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.787837283488!2d-58.51178013022461!3d-34.61814369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9d1593c9e23%3A0x12bbcca2d4c0246f!2sAv.%20%C3%81lvarez%20Jonte%204543%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689615880524!5m2!1ses-419!2sar"  width="330" height="200" className="mx-auto" style={{border:0}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div className='pt-3 px-2'>
-                        <div className='d-flex align-items-center justify-content-center py-3 px-2 gap-2 border rounded'>
-                            <img src="https://www.staticbp.com/img/inmobiliarias/saman.png" width="100" alt="" />
-                            <p className='my-auto fw-semibold'>Samaniego Propiedades</p>
-                        </div>
-                        <form action="" method="post" className='form-propiedad mt-2 px-3 py-2 border rounded'>
-                            <p className='fw-semibold'>Contactar a la Inmobiliaria</p>
-                            <div>
-                                <input type="text" id="nombre" name="nombre" required placeholder='Nombre y Apellido'/>
-                            </div>
-                            <div>
-                                <input type="email" id="email" name="email" required placeholder='Email'/>
-                            </div>
-                            <div>
-                                <input type="tel" id="telefono" name="telefono" required placeholder='Teléfono'/>
-                            </div>
-                            <div>
-                                <textarea id="mensaje" name="mensaje" required placeholder='Hola, me interesa esta propiedad que vi en Magazine Inmobiliario y quisiera que me contacten. Muchas gracias.'></textarea>
-                            </div>
-                            <button type="submit" className='btn btn-success col-12'>Enviar</button>
-                        </form>
+                    <div className='pt-3 px-2 d-flex justify-content-center'>
+                        <PropiedadContacto/>
                     </div>
                 </div>
-                
                 <div className='py-5'>
-                    <h5 className='px-3'>Propiedades similares</h5>
+                    <h4 className='px-3 text-center'>Propiedades similares</h4>
                     <div className='d-flex flex-wrap gap-3 py-2 justify-content-center'>
-                        <div className="card" style={{width:"15rem"}}>
-                            <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div className="card" style={{width:"15rem"}}>
-                            <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div className="card" style={{width:"15rem"}}>
-                            <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                        <div className="card" style={{width:"15rem"}}>
-                            <img src="https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/632/632958.jpg" className="card-img-top" alt="..."/>
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
+                        <PropiedadSimilar/>
+                        <PropiedadSimilar/>
+                        <PropiedadSimilar/>
                     </div>
                 </div>
             </div>

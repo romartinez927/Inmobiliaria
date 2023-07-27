@@ -10,7 +10,7 @@ function blog() {
   return (
     <div className="container-xl post-container pt-4 mt-4 mx-auto">
       <div className="row gy-4">
-        <div className="col-lg-8 col-md-8 mx-auto">
+        <div className="col-lg-8 col-md-7 mx-auto">
           <div className="row gy-4 d-flex justify-content-evenly gap-1">
             {
               noticiasBlog.map(({ title, img, text, category, date }, index) => {
@@ -22,7 +22,7 @@ function blog() {
           </div>
           <Pagination />
         </div>
-        <div className="col-lg-4 col-md-4">
+        <div className="col-lg-4 col-md-5 col-12 blog-sidebar">
           <SidebarNews title="Las más Leídas"/>
           <SidebarNews title="Últimas Noticias"/>
           <SidebarCategorias/>

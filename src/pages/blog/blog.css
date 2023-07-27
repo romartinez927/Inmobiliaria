@@ -125,3 +125,13 @@
     right: 0;
 }
 
+.blog-sidebar {
+    max-width: 360px;
+}
+
+@media (max-width: 750px) {
+    .blog-sidebar {
+        max-width: 500px;
+        margin: auto
+    }
+}

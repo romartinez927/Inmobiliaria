@@ -18,9 +18,10 @@
 }
 
 .image-container {
-    min-width: 330px;
+    min-width: 360px;
     min-height: auto; 
     overflow: hidden;
+    border-radius: 10px 0 0 10px;
 }
 
 .responsive-image {

@@ -4,34 +4,38 @@ import { ciudades, tiposPropiedad } from '../../../data.js';
 import "./filtros.css"
 
 function Filtros() {
-    const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingresa ciudades o barrios');
+    const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingrese ciudad o barrio');
     const [tipoSeleccionado, setTipoSeleccionado] = useState('Propiedad');
 
   return (
-    <div className='d-flex px-3 pt-3 pb-2 gap-2'>
-       <div>
-        <select id="localidad" className="custom-select pe-5" value={localidadSeleccionada} onChange={e => setLocalidadSeleccionada(e.target.value)}>
-          <option value="Ingresa ciudades o barrios" disabled hidden>Ingresa ciudades o barrios</option>
+    <div className='d-flex row justify-content-center gy-2 pt-3 pb-2'>
+      <div class="dropdown d-flex justify-content-md-end justify-content-center col-md-4 col-sm-10">
+        <button class="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {localidadSeleccionada}
+        </button>
+        <ul class="dropdown-menu">
           {
-            ciudades.map(ciudad => (
-                <option key={ciudad} value={ciudad}>
-                    {ciudad}
-                </option>
-            ))
+              ciudades.map(ciudad => (
+                <li key={ciudad} >
+                  <button class="dropdown-item" type="button">{ciudad}</button>
+                </li>   
+              ))
           }
-        </select>
+        </ul>
       </div>
-      <div>
-        <select id="tipo" className="custom-select pe-4" value={tipoSeleccionado} onChange={e => setTipoSeleccionado(e.target.value)}>
-            <option value="Propiedad" disabled hidden>Propiedad</option>
-            {
+      <div class="dropdown d-flex justify-content-md-start justify-content-center col-md-3 col-sm-10">
+        <button class="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {tipoSeleccionado}
+        </button>
+        <ul class="dropdown-menu">
+          {
               tiposPropiedad.map(tipo => (
-                  <option key={tipo} value={tipo}>
-                      {tipo}
-                  </option>
+                <li key={tipo} >
+                  <button class="dropdown-item" type="button">{tipo}</button>
+                </li>  
               ))
             } 
-        </select>
+        </ul>
       </div>
     </div>
   )

@@ -1,23 +1,13 @@
-.custom-select {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
+
+  .filtros-propiedades{
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px;
     background-color: #fff;
-    color: #000;
-    font-weight: 500;
-    outline: none;
-    appearance:none;
-    background-image: url("../../images/flecha.png");
-    background-repeat: no-repeat; 
-    background-position-x: 95%;
-    background-position-y: center;
-    background-size: 10px;
-    cursor: pointer;
   }
 
-  .custom-select:hover {
+  .filtros-propiedades:hover {
+    color: #e63946;
     background-color: #fff;
+    border: 1px solid #e63946;
+    transition: all .2s ease-in-out;
   }

@@ -3,6 +3,7 @@ import {Link, NavLink} from "react-router-dom"
 import { links } from "../../data.js"
 import { FaBars } from "react-icons/fa"
 import { useEffect, useState } from "react"
+import logo from "../../assets/logo.png"
 
 function NavBar() {
     const [visible, setVisible] = useState(false);
@@ -26,7 +27,7 @@ function NavBar() {
         <div className="row">
             <div className="d-none col-3 d-md-flex justify-content-center ">
                 <a href="/" className="fw-700 my-auto logo" >
-                    <img src="src\images\logo.png" alt="Magazine Inmobiliario" width="130" />
+                    <img src={logo} alt="Magazine Inmobiliario" width="140" />
                 </a>
             </div>
             <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
@@ -85,7 +86,7 @@ function NavBar() {
         </div>
         <div className="offcanvas offcanvas-end canvas" tabIndex="-1" id="mobile-nav" style={{boxShadow: "-4px 0px 20px rgba(32,54,86,.1)"}}>
             <div className="offcanvas-header">
-                <img src="src/images/logo.png" width="118" alt="logo" />
+                <img src={logo} width="180" alt="logo" />
                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body container pt-5">

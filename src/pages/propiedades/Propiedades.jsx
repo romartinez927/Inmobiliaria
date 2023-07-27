@@ -5,7 +5,7 @@ import Pagination from '../../components/Pagination/Pagination'
 
 function Propiedades() {
   return (
-    <div className='pb-3'>
+    <div className='pb-3 container-fluid'>
       <Filtros/>
       <ListadoPropiedades/>
       <ListadoPropiedades/>
