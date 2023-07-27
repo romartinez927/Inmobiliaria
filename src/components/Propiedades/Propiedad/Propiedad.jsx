@@ -23,7 +23,7 @@ function Propiedad() {
   const renderComponent = () => {
     if (windowWidth >= 1000) {
       return (
-        <div className='container-fluid pt-2'>
+        <div className='container-fluid pt-4'>
             <div className='d-flex ps-5 py-2 align-items-center gap-2'>
                 <h6 className='my-auto'>Inicio</h6>
                 <span className="material-symbols-outlined" style={{fontSize:"15px"}}>

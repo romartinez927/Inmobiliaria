@@ -7,24 +7,14 @@ import logo from "../../assets/logo.png"
 
 function NavBar() {
     const [visible, setVisible] = useState(false);
-    const [isHovering, setIsHovering] = useState(false);
-
-    const handleMouseEnter = () => {
-      setIsHovering(true);
-      console.log("hola")
-    };
-  
-    const handleMouseLeave = () => {
-      setIsHovering(false);
-    };
     
     const toggleDiv = () => {
       setVisible(!visible);
     }
 
   return (
-    <nav id="nav-menu" className='container-fluid'>
-        <div className="row">
+    <nav id="nav-menu" className='container-fluid ' >
+        <div className="row nav-height">
             <div className="d-none col-3 d-md-flex justify-content-center ">
                 <a href="/" className="fw-700 my-auto logo" >
                     <img src={logo} alt="Magazine Inmobiliario" width="140" />
@@ -37,36 +27,16 @@ function NavBar() {
                 <li className="nav-item p-3">
                     <NavLink className="nav-link" to="/blog">Blog</NavLink>
                 </li>
-                <li className="nav-item dropdown p-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    {isHovering ? (
-                        <>
-                        <a className="nav-link dropdown-toggle show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                        Ediciones
-                        </a>
-                        <ul style={{position: "absolute", inset: "0px auto auto 0px", margin: "0px", transform: "translate3d(16px, 42px, 0px)"}} className="dropdown-menu">
-                     <li className="pt-2 pb-1">
-                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/">Edición Julio 2023</a>
+                <li className="dropdownn p-3 nav-item">
+                    <a className="pruebaa nav-link">Ediciones</a>
+                    <div className="dropdown-menuu">
+                        <li className="pt-2 pb-1">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/" target="_blank">Edición Julio 2023</a>
                         </li>
-                        <li><hr className="dropdown-divider"/></li>
-                        <li className="py-1">
-                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/">Edición Junio 2023</a>
+                        <li className="py-1 border-top">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/" target="_blank">Edición Junio 2023</a>
                         </li>
-                    </ul></>
-                    ) : (
-                        <>
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ediciones
-                        </a>
-                        <ul className="dropdown-menu"> <li className="pt-2 pb-1">
-                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/">Edición Julio 2023</a>
-                        </li>
-                        <li><hr className="dropdown-divider"/></li>
-                        <li className="py-1">
-                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/">Edición Junio 2023</a>
-                        </li>
-                    </ul></>
-                    )}
-                       
+                    </div>
                 </li>
                 <li className="nav-item p-3">
                     <NavLink className="nav-link" to="/servicios">Servicios</NavLink>

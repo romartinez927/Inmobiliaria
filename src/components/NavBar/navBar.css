@@ -112,3 +112,37 @@ nav div ul li .nav-item {
     right: 0;
 }
 
+.dropdownn {
+    position: relative
+}
+
+.dropdown-menuu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .05rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: all ease .8s;
+    z-index: 2000;
+}
+
+.dropdownn > .pruebaa:hover + .dropdown-menuu {
+    opacity: 1
+}
+
+.dropdown-menuu:hover {
+    opacity: 1
+}
+
+.dropdown-item {
+    color: black
+}
+
+@media screen and (min-width: 800px) {
+    .nav-height {
+        min-height: 70px;
+    }
+}
