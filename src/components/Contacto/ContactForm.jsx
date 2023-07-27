@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import "./contactoForm.css"
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -21,43 +22,41 @@ function ContactForm() {
     };
     return (
         <form onSubmit={handleSubmit} className='form-comentarios col-md-6 col-sm-12 rounded bordered padding-30 mt-3'>
-            <div className='d-flex justify-content-between'>
-                <p className="comment-form-author">
-                    <label htmlFor="author">Nombre 
-                        <span className="required"> *</span>
-                    </label> 
-                    <input 
-                        id="author" 
-                        name="author" 
-                        type="text" 
-                        size="30" 
-                        maxLength="245" 
-                        autoComplete="name" 
-                        className='form-control'
-                        value={formData.author}
-                        onChange={handleChange}
-                        required
-                    />
-                </p>
-                <p className="comment-form-email">
-                    <label htmlFor="email">Email 
-                        <span className="required"> *</span>
-                    </label> 
-                    <input 
-                        id="email" 
-                        name="email" 
-                        type="email" 
-                        size="30" 
-                        maxLength="100" 
-                        aria-describedby="email-notes" 
-                        autoComplete="email"
-                        className='form-control'
-                        value={formData.email}
-                        onChange={handleChange} 
-                        required=""
-                    />
-                </p>
-            </div>
+            <p className="comment-form-author">
+                <label htmlFor="author">Nombre 
+                    <span className="required"> *</span>
+                </label> 
+                <input 
+                    id="author" 
+                    name="author" 
+                    type="text" 
+                    size="20" 
+                    maxLength="245" 
+                    autoComplete="name" 
+                    className='form-control'
+                    value={formData.author}
+                    onChange={handleChange}
+                    required
+                />
+            </p>
+            <p className="comment-form-email">
+                <label htmlFor="email">Email 
+                    <span className="required"> *</span>
+                </label> 
+                <input 
+                    id="email" 
+                    name="email" 
+                    type="email" 
+                    size="80" 
+                    maxLength="100" 
+                    aria-describedby="email-notes" 
+                    autoComplete="email"
+                    className='form-control'
+                    value={formData.email}
+                    onChange={handleChange} 
+                    required=""
+                />
+            </p>
             <p className="comment-form-asunto">
                 <label htmlFor="asunto">Asunto 
                     <span className="required"> *</span>

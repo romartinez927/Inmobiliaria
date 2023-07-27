@@ -38,10 +38,6 @@
     box-shadow: none;
 }
 
-.comment-form-author, .comment-form-email {
-    max-width: 50%;
-}
-
 .comment-form-author label, .comment-form-email label, .comment-form-comment label, .comment-form-asunto label {
     color: #8f9bad;
     font-size: 15px;

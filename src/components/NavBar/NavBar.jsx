@@ -6,11 +6,16 @@ import { useEffect, useState } from "react"
 
 function NavBar() {
     const [visible, setVisible] = useState(false);
-    const [visibleNav, setVisibleNav] = useState(false);
+    const [isHovering, setIsHovering] = useState(false);
 
-    const toggleDivNav = () => {
-      setVisibleNav(!visibleNav);
-    }
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+      console.log("hola")
+    };
+  
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };
     
     const toggleDiv = () => {
       setVisible(!visible);
@@ -20,7 +25,7 @@ function NavBar() {
     <nav id="nav-menu" className='container-fluid'>
         <div className="row">
             <div className="d-none col-3 d-md-flex justify-content-center ">
-                <a href="#" className="fw-700 my-auto logo" >
+                <a href="/" className="fw-700 my-auto logo" >
                     <img src="src\images\logo.png" alt="Magazine Inmobiliario" width="130" />
                 </a>
             </div>
@@ -31,15 +36,36 @@ function NavBar() {
                 <li className="nav-item p-3">
                     <NavLink className="nav-link" to="/blog">Blog</NavLink>
                 </li>
-                <li className="nav-item p-3" onClick={toggleDivNav}>
-                    <p className="nav-link mb-0" >Ediciones<i className="fa-solid fa-angle-down ms-2 my-auto"></i></p>
-                    {
-                        visibleNav && (
-                            <div>
-                                <p>Hola</p>
-                            </div>
-                        )
-                    }
+                <li className="nav-item dropdown p-3" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    {isHovering ? (
+                        <>
+                        <a className="nav-link dropdown-toggle show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Ediciones
+                        </a>
+                        <ul style={{position: "absolute", inset: "0px auto auto 0px", margin: "0px", transform: "translate3d(16px, 42px, 0px)"}} className="dropdown-menu">
+                     <li className="pt-2 pb-1">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/">Edición Julio 2023</a>
+                        </li>
+                        <li><hr className="dropdown-divider"/></li>
+                        <li className="py-1">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/">Edición Junio 2023</a>
+                        </li>
+                    </ul></>
+                    ) : (
+                        <>
+                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ediciones
+                        </a>
+                        <ul className="dropdown-menu"> <li className="pt-2 pb-1">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/">Edición Julio 2023</a>
+                        </li>
+                        <li><hr className="dropdown-divider"/></li>
+                        <li className="py-1">
+                            <a className="dropdown-item" href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/">Edición Junio 2023</a>
+                        </li>
+                    </ul></>
+                    )}
+                       
                 </li>
                 <li className="nav-item p-3">
                     <NavLink className="nav-link" to="/servicios">Servicios</NavLink>
