@@ -23,7 +23,7 @@ function ListadoPropiedades() {
       return (
       <div className='d-flex px-4 pt-3 justify-content-center' style={{lineHeight:"20px"}}>
         <a href="/propiedades/propiedad" className='propiedad-link'>
-          <div className='d-flex justify-content-between gap-2 border propiedad-listado rounded'>
+          <div className='d-flex bg-white justify-content-between gap-2 border propiedad-listado rounded'>
             <div className='image-container'>
               <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
             </div>
@@ -56,7 +56,7 @@ function ListadoPropiedades() {
       );
     } else {
       return (
-        <div className="card mx-4 mb-4" style={{width: "auto"}}>
+        <div className="card mx-4 mb-4 bg-white" style={{width: "auto"}}>
           <img src="https://www.zonaprop.com.ar/noticias/wp-content/uploads/2016/08/depto.jpg" className="card-img-top" alt="imagen"/>
           <div className="card-body">
             <div className='d-flex gap-5 pt-1'>

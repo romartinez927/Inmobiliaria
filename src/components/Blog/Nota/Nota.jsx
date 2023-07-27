@@ -63,11 +63,11 @@ function Nota() {
                             </div>
                         </div>
                         <div className='row nextprev-post-wrapper justify-content-between py-3 gy-2 px-2'>
-                            <div className='col-md-5 col-12 nextprev-post prev border'>
+                            <div className='col-md-5 col-12 nextprev-post prev border bg-white'>
                                 <p className='mb-0'>Previous Post</p>
                                 <h5 className='mt-1 efecto-hover'>How To Buy Bulb On a Tight Budget</h5>
                             </div>
-                            <div className='col-md-5 col-12 nextprev-post next text-end border'>
+                            <div className='col-md-5 col-12 nextprev-post next text-end border bg-white'>
                                 <p className='mb-0'>Next Post</p>
                                 <h5 className='mt-1 efecto-hover'>Your Light Is About To Stop Being Relevant</h5>
                             </div>

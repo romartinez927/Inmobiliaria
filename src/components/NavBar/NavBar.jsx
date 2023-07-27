@@ -13,7 +13,7 @@ function NavBar() {
     }
 
   return (
-    <nav id="nav-menu" className='container-fluid ' >
+    <nav id="nav-menu" className='container-fluid bg-white' >
         <div className="row nav-height">
             <div className="d-none col-3 d-md-flex justify-content-center ">
                 <a href="/" className="fw-700 my-auto logo" >

@@ -8,7 +8,7 @@ import SidebarCategorias from '../../components/Blog/SidebarCategorias/SidebarCa
 
 function blog() {
   return (
-    <div className="container-xl post-container pt-4 mt-4 mx-auto">
+    <div className="container-xl post-container pt-4 mx-auto">
       <div className="row gy-4">
         <div className="col-lg-8 col-md-7 mx-auto">
           <div className="row gy-4 d-flex justify-content-evenly gap-1">
