@@ -11,7 +11,7 @@ function MainHeader() {
               <input
                 type="text"
                 className="form-control ps-4"
-                style={{paddingBlock: "12px", borderRadius: "25px"}}
+                style={{paddingBlock: "12px", borderRadius: "8px"}}
                 placeholder="Ej, seguridad, alquiler, reparación"
               />
             </div>
@@ -19,11 +19,11 @@ function MainHeader() {
               <input
                 type="text"
                 className="form-control ps-4"
-                style={{paddingBlock: "12px", borderRadius: "25px"}}
+                style={{paddingBlock: "12px", borderRadius: "8px"}}
                 placeholder="Tu barrio..."
               />
             </div>
-            <button className="btn btn-red fw-semibold rounded-5 col-md-2" style={{paddingBlock: "10px", maxWidth: "150px"}}>Buscar</button>
+            <button className="btn btn-red fw-semibold rounded col-md-2" style={{paddingBlock: "10px", maxWidth: "150px"}}>Buscar</button>
           </form>
         </div>
       </div>

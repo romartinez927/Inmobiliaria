@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path="https://romartinez927.github.io/Inmobiliaria/" element={<Home/>}/>
+          <Route path="/Inmobiliaria/" element={<Home/>}/>
           <Route path="/Inmobiliaria/contacto" element={<Contacto/>}/>
           <Route path="/Inmobiliaria/blog" element={<Blog/>}/>
           <Route path="/Inmobiliaria/blog/nota" element={<Nota/>}/>
