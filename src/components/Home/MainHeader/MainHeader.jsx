@@ -5,8 +5,8 @@ function MainHeader() {
     <div className="header d-flex mx-auto">
       <div className="d-flex bg-rgba flex-column justify-content-center align-items-center text-light text-center" >
         <h1 className="pb-2 title-header">Todo lo que necesitas para tu hogar</h1>
-        <div className="container-fluid " >
-          <form action="" className="row rounded pb-2 pe-2 mb-3 mx-auto d-flex justify-content-center gy-2" style={{backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
+        <div className="container-fluid" >
+          <form action="" className="row rounded pb-3 pe-3 mb-3 mt-1 mx-auto d-flex justify-content-center gy-3" style={{backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
             <div className="form-group col-md-6">
               <input
                 type="text"
